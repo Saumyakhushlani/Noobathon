@@ -71,10 +71,6 @@ function Box({
   variant?: "soft" | "outline";
   className?: string;
 }) {
-  const base =
-    variant === "outline"
-      ? "bg-white hover:bg-gray-50"
-      : "bg-white hover:bg-gray-50";
   const Comp: any = onClick ? "button" : "div";
   return (
     <Comp
@@ -84,17 +80,24 @@ function Box({
         "inline-flex max-w-full items-center justify-center rounded-md border-2 px-4 py-2 text-sm font-semibold shadow-sm",
         "whitespace-normal break-words text-center",
         "transition-colors",
-        base,
+        "cursor-pointer",
+        // themed fill (works for both leaf + category; category gets slightly stronger via variant)
+        "bg-[color-mix(in_oklab,var(--box-accent)_28%,white)]",
+        "hover:bg-[color-mix(in_oklab,var(--box-accent)_36%,white)]",
         className ?? "",
       ].join(" ")}
       style={{
+        // use CSS variable so Tailwind can reference it in bg/hover
+        ["--box-accent" as any]: accent,
         borderColor: accent,
         color: "rgb(17 24 39)", // gray-900
-        backgroundColor:
-          variant === "soft"
-            ? // a subtle tint using the theme color
-              `color-mix(in oklab, ${accent} 12%, white)`
-            : "white",
+        // bump category boxes a bit more
+        ...(variant === "soft"
+          ? {}
+          : {
+              // leaf boxes slightly lighter by default
+              backgroundColor: `color-mix(in oklab, ${accent} 18%, white)`,
+            }),
       }}
     >
       {label}
