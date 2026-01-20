@@ -24,9 +24,9 @@ export default function Gallery() {
 
   const images = [
     { src: '/images/10259117.jpg', alt: 'Cyber security visual 1' },
-    { src: '/images/10281182.jpg', alt: 'Cyber security visual 2' },
-    { src: '/images/5566179.jpg', alt: 'Cyber security visual 5' },
     { src: '/images/7373068.jpg', alt: 'Cyber security visual 6' },
+    { src: '/images/5566179.jpg', alt: 'Cyber security visual 5' },
+    { src: '/images/10281182.jpg', alt: 'Cyber security visual 2' },
     { src: '/images/4560.jpg', alt: 'Cyber security visual 4' },
     { src: '/images/1807_i402_018_s.jpg', alt: 'Cyber security visual 3' },
   ];
