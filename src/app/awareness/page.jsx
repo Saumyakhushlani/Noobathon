@@ -1,5 +1,7 @@
-import AwarenessPage from '@/components/awareness/AwarenessPage';
 
 export default function Page() {
-  return <AwarenessPage />;
+  return <>
+    <h1>Awareness</h1>
+    
+  </>;
 }

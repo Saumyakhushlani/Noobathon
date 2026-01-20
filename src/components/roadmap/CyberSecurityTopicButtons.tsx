@@ -23,9 +23,18 @@ const themeCycle = [
   {
     bg: "bg-[var(--brand-purple)]",
     ring: "ring-[var(--brand-purple)]/30",
+    accent: "var(--brand-purple)",
   },
-  { bg: "bg-[var(--brand-pink)]", ring: "ring-[var(--brand-pink)]/30" },
-  { bg: "bg-[var(--brand-blue)]", ring: "ring-[var(--brand-blue)]/30" },
+  {
+    bg: "bg-[var(--brand-pink)]",
+    ring: "ring-[var(--brand-pink)]/30",
+    accent: "var(--brand-pink)",
+  },
+  {
+    bg: "bg-[var(--brand-blue)]",
+    ring: "ring-[var(--brand-blue)]/30",
+    accent: "var(--brand-blue)",
+  },
 ] as const;
 
 export default function CyberSecurityTopicButtons() {
@@ -126,15 +135,20 @@ export default function CyberSecurityTopicButtons() {
               key={t.value ?? t.name}
               onClick={() => fetchTopic(t)}
               className={[
-                "rounded-xl border border-black/10 bg-white px-3 py-2 text-left text-sm font-semibold text-gray-900",
-                "shadow-sm transition-transform hover:-translate-y-[1px] hover:shadow-md",
-                "focus:outline-none focus:ring-2 focus:ring-offset-2",
+                "rounded-xl border-2 px-3 py-2 text-left text-sm font-semibold text-white",
+                "shadow-[4px_4px_0_0_#111] transition-transform transition-shadow hover:-translate-y-[1px] hover:shadow-[6px_6px_0_0_#111]",
+                "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2",
                 palette.ring,
                 isActive ? "ring-2 ring-offset-2" : "",
               ].join(" ")}
+              style={{
+                borderColor: "#111",
+                // "/90" look (opaque): 90% theme color mixed with white
+                backgroundColor: `color-mix(in oklab, ${palette.accent} 90%, white)`,
+              }}
             >
               <div className="flex items-center gap-2">
-                <span className={`h-2.5 w-2.5 rounded-full ${palette.bg}`} />
+                <span className="h-2.5 w-2.5 rounded-full bg-white/90" />
                 <span className="line-clamp-2">{t.name}</span>
               </div>
             </button>

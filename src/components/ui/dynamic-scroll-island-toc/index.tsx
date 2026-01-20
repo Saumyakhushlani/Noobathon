@@ -12,6 +12,8 @@ import {
   useSpring,
   useTransform,
 } from "motion/react";
+import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
 import { useEffect, useState } from "react";
 import { TbChevronUp, TbX } from "react-icons/tb";
 
@@ -186,9 +188,11 @@ const DynamicScrollIslandTOC = ({
                           </div>
                         )}
                         {content?.description && (
-                          <pre className="whitespace-pre-wrap text-xs leading-relaxed text-white/80">
-                            {content.description}
-                          </pre>
+                          <div className="prose prose-invert prose-sm max-w-none prose-p:my-2 prose-a:underline prose-a:underline-offset-4 prose-code:rounded prose-code:bg-white/10 prose-code:px-1 prose-code:py-0.5 prose-pre:bg-white/10">
+                            <ReactMarkdown remarkPlugins={[remarkGfm]}>
+                              {content.description}
+                            </ReactMarkdown>
+                          </div>
                         )}
                         {content?.resources?.length ? (
                           <div className="mt-3">

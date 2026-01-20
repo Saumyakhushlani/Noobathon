@@ -6,6 +6,8 @@ import Modal from "@/components/ui/modal";
 import TextBlockAnimation from "@/components/text-block-animation";
 import type { RoadmapNodeContent } from "@/lib/roadmap";
 import { slugifyRoadmapName } from "@/lib/roadmap";
+import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
 
 import cyberSecurityIndex from "@/data/cyber-security.json";
 
@@ -72,30 +74,23 @@ function Box({
   variant?: "soft" | "outline";
   className?: string;
 }) {
-  const base =
-    variant === "outline"
-      ? "bg-white hover:bg-gray-50"
-      : "bg-white hover:bg-gray-50";
   const Comp: any = onClick ? "button" : "div";
   return (
     <Comp
       onClick={onClick}
       role={onClick ? undefined : "group"}
       className={[
-        "inline-flex max-w-full items-center justify-center rounded-md border-2 px-4 py-2 text-sm font-semibold shadow-sm",
+        "inline-flex max-w-full items-center justify-center rounded-md border-2 px-4 py-2 text-sm font-semibold",
         "whitespace-normal break-words text-center",
-        "transition-colors",
-        base,
+        "shadow-[4px_4px_0_0_#111] transition-transform transition-colors transition-shadow",
+        "hover:-translate-y-[1px] hover:shadow-[6px_6px_0_0_#111]",
         className ?? "",
       ].join(" ")}
       style={{
         borderColor: accent,
-        color: "rgb(17 24 39)", // gray-900
-        backgroundColor:
-          variant === "soft"
-            ? // a subtle tint using the theme color
-              `color-mix(in oklab, ${accent} 12%, white)`
-            : "white",
+        color: "white",
+        // "/90" look (opaque): 90% theme color mixed with white
+        backgroundColor: `color-mix(in oklab, ${accent} 90%, white)`,
       }}
     >
       {label}
@@ -169,6 +164,9 @@ function TreeSection({
               accent={accentVar}
               variant="soft"
             />
+            <span className="pl-2 text-xs text-gray-500">
+              {children.length} subtopics
+            </span>
           </div>
         </summary>
 
@@ -192,9 +190,6 @@ function TreeSection({
           ))}
         </div>
 
-        <div className="mt-3 block pl-6 text-xs text-gray-500">
-          {children.length} subtopics
-        </div>
       </details>
     </div>
   );
@@ -281,7 +276,8 @@ export default function CyberSecurityRoadmapDiagram() {
         {topLevel.map((section) => (
           <div
             key={`${section.label}-${section.nodeId ?? "x"}`}
-            className="rounded-2xl border border-black/10 bg-white p-5 shadow-sm"
+            className="rounded-2xl border-2 p-5 shadow-[10px_10px_0_0_#111]"
+            style={{ borderColor: "#111", backgroundColor: "#fefae8" }}
           >
             <div className="mt-4 space-y-3">
               <TreeSection node={section} onOpen={openTopic} />
@@ -311,9 +307,11 @@ export default function CyberSecurityRoadmapDiagram() {
         {!loading && !error && data && (
           <div className="space-y-4">
             <div className="rounded-xl border border-black/10 bg-gray-50 p-4">
-              <pre className="whitespace-pre-wrap font-mono text-[13px] leading-relaxed text-gray-800">
-                {data.description}
-              </pre>
+              <div className="prose prose-sm max-w-none prose-p:my-2 prose-a:text-[var(--brand-purple)] prose-a:underline prose-a:underline-offset-4 prose-code:rounded prose-code:bg-black/5 prose-code:px-1 prose-code:py-0.5 prose-pre:bg-black/5 prose-pre:text-gray-900">
+                <ReactMarkdown remarkPlugins={[remarkGfm]}>
+                  {data.description}
+                </ReactMarkdown>
+              </div>
             </div>
 
             {data.resources?.length ? (
