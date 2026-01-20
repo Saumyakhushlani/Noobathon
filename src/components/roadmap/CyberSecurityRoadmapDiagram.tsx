@@ -310,12 +310,8 @@ export default function CyberSecurityRoadmapDiagram() {
         )}
         {!loading && !error && data && (
           <div className="space-y-4">
-            <div className="text-xs text-gray-500">
-              nodeId: <span className="font-mono">{data.nodeId}</span>
-            </div>
-
             <div className="rounded-xl border border-black/10 bg-gray-50 p-4">
-              <pre className="whitespace-pre-wrap text-sm leading-relaxed text-gray-800">
+              <pre className="whitespace-pre-wrap font-mono text-[13px] leading-relaxed text-gray-800">
                 {data.description}
               </pre>
             </div>
