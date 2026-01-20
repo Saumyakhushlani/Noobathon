@@ -3,6 +3,7 @@
 import * as React from 'react';
 
 import { Timeline } from '@/components/ui/timeline';
+import CyberSecurityRoadmapDiagram from "@/components/roadmap/CyberSecurityRoadmapDiagram";
 
 export default function TimelineRoadmapPage() {
   const data = [
@@ -156,6 +157,7 @@ export default function TimelineRoadmapPage() {
         heading="How it Works"
         data={data}
       />
+      <CyberSecurityRoadmapDiagram />
     </div>
   );
 }

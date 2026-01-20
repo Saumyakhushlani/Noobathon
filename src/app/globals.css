@@ -1,6 +1,8 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
+@custom-variant dark (&:is(.dark *));
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -42,12 +44,20 @@
   --radius-2xl: calc(var(--radius) + 8px);
   --radius-3xl: calc(var(--radius) + 12px);
   --radius-4xl: calc(var(--radius) + 16px);
+  --color-d-sheet: var(--d-sheet);
+  --color-d-border: var(--d-border);
+  --color-d-fg: var(--d-fg);
+  --color-d-muted: var(--d-muted);
+  --color-d-bg: var(--d-bg);
 }
 
 :root {
   --radius: 0.625rem;
   --background: oklch(1 0 0);
   --foreground: oklch(0.145 0 0);
+  --brand-blue: #60a5fa;
+  --brand-pink: #ec4899;
+  --brand-purple: #a855f7;
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.145 0 0);
   --popover: oklch(1 0 0);
@@ -77,6 +87,11 @@
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
+  --d-bg: hsl(0 0% 100%);
+  --d-muted: hsl(0 0% 90%);
+  --d-fg: hsl(0 0% 0%);
+  --d-border: hsl(0 0% 90%);
+  --d-sheet: hsl(0 0% 98%);
 }
 
 @layer base {
@@ -86,4 +101,12 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+.dark {
+  --d-bg: hsl(0 0% 10%);
+  --d-muted: hsl(0 0% 20%);
+  --d-fg: hsl(0 0% 100%);
+  --d-border: hsl(0 0% 20%);
+  --d-sheet: hsl(0 0% 12%);
 }

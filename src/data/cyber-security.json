@@ -1,0 +1,3012 @@
+[
+    {
+        "nodeId": "oimYzZYFXKjgvc7D4c-2u",
+        "text": "Cyber Security > Fundamental IT Skills",
+        "subjects": [
+            "Information Technology (IT) Fundamentals"
+        ],
+        "_id": "6814a655f0fbeb31d668e5ef",
+        "isOptional": false,
+        "guides": []
+    },
+    {
+        "nodeId": "Ih0YZt8u9vDwYo8y1t41n",
+        "text": "Cyber Security > Fundamental IT Skills > Computer Hardware Components",
+        "subjects": [
+            "Computer Hardware Fundamentals"
+        ],
+        "_id": "6814a656f0fbeb31d668e5f6",
+        "isOptional": false,
+        "guides": [
+            "Computer Hardware Components"
+        ]
+    },
+    {
+        "nodeId": "F1QVCEmGkgvz-_H5lTxY2",
+        "text": "Cyber Security > Fundamental IT Skills > Connection Types and their function",
+        "subjects": [],
+        "_id": "6814a657f0fbeb31d668e5fd"
+    },
+    {
+        "nodeId": "pJUhQin--BGMuXHPwx3JJ",
+        "text": "Cyber Security > Fundamental IT Skills > OS-Independent Troubleshooting",
+        "subjects": [
+            "Basic Troubleshooting for Operating Systems"
+        ],
+        "_id": "6814a658f0fbeb31d668e604",
+        "isOptional": false,
+        "guides": [
+            "OS-Independent Troubleshooting"
+        ]
+    },
+    {
+        "nodeId": "_7RjH4Goi0x6Noy6za0rP",
+        "text": "Cyber Security > Fundamental IT Skills > Understand Basics of Popular Suites",
+        "subjects": [],
+        "_id": "6814a659f0fbeb31d668e60b"
+    },
+    {
+        "nodeId": "T0aU8ZQGShmF9uXhWY4sD",
+        "text": "Cyber Security > Fundamental IT Skills > Basics of Computer Networking",
+        "subjects": [
+            "Computer Networking Fundamentals"
+        ],
+        "_id": "6814a65bf0fbeb31d668e612",
+        "isOptional": false,
+        "guides": [
+            "What is computer networking?"
+        ]
+    },
+    {
+        "nodeId": "hwAUFLYpc_ftCfXq95dey",
+        "text": "Cyber Security > Fundamental IT Skills > Connection Types and their function > NFC",
+        "subjects": [],
+        "_id": "6814a65df0fbeb31d668e619",
+        "guides": [
+            "What is NFC and how it works??"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "DbWf5LdqiByPiJa4xHtl_",
+        "text": "Cyber Security > Fundamental IT Skills > Connection Types and their function > Bluetooth",
+        "subjects": [],
+        "_id": "6814a65ff0fbeb31d668e620",
+        "guides": [
+            "What is Bluetooth and how it works??"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "fUBNKHNPXbemRYrnzH3VT",
+        "text": "Cyber Security > Fundamental IT Skills > Connection Types and their function > WiFi",
+        "subjects": [],
+        "_id": "6814a661f0fbeb31d668e625",
+        "guides": [
+            "What is WiFi and how it works??"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "KsZ63c3KQLLn373c5CZnp",
+        "text": "Cyber Security > Fundamental IT Skills > Connection Types and their function > Infrared",
+        "subjects": [],
+        "_id": "6814a663f0fbeb31d668e62a",
+        "guides": [
+            "What is Infrared and how it works??"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "-5haJATqlmj0SFSFAqN6A",
+        "text": "Cyber Security > Fundamental IT Skills > Understand Basics of Popular Suites > MS Office Suite",
+        "subjects": [],
+        "_id": "6814a666f0fbeb31d668e62f",
+        "guides": [
+            "Getting started with MS Office Suite"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "E7yfALgu9E2auOYDOTmex",
+        "text": "Cyber Security > Fundamental IT Skills > Understand Basics of Popular Suites > iCloud",
+        "subjects": [],
+        "_id": "6814a667f0fbeb31d668e634",
+        "guides": [
+            "What is iCloud?"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "IOK_FluAv34j3Tj_NvwdO",
+        "text": "Cyber Security > Fundamental IT Skills > Understand Basics of Popular Suites > Google Suite",
+        "subjects": [],
+        "_id": "6814a66af0fbeb31d668e639",
+        "guides": [
+            "What is Google Suite?"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "wkuE_cChPZT2MHyGjUuU4",
+        "text": "Cyber Security > CTFs (Capture the Flag) > HackTheBox",
+        "subjects": [],
+        "_id": "6814a8a40d8403989c02ac60",
+        "guides": [
+            "What is HackTheBox?"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "kht-L7_v-DbglMYUHuchp",
+        "text": "Cyber Security > CTFs (Capture the Flag) > TryHackMe",
+        "subjects": [],
+        "_id": "6814a8a50d8403989c02ac67",
+        "guides": [
+            "What is TryHackMe?"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "W94wY_otBuvVW_-EFlKA6",
+        "text": "Cyber Security > CTFs (Capture the Flag) > VulnHub",
+        "subjects": [],
+        "_id": "6814a8a70d8403989c02ac6e",
+        "guides": [
+            "What is VulnHub?"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "pou5xHwnz9Zsy5J6lNlKq",
+        "text": "Cyber Security > CTFs (Capture the Flag) > picoCTF",
+        "subjects": [],
+        "_id": "6814a8a80d8403989c02ac75",
+        "guides": [
+            "What is picoCTF?"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "WCeJrvWl837m1BIjuA1Mu",
+        "text": "Cyber Security > CTFs (Capture the Flag) > SANS Holiday Hack Challenge",
+        "subjects": [],
+        "_id": "6814a8aa0d8403989c02ac7c",
+        "guides": [
+            "What is the SANS Holiday Hack Challenge?"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "UY6xdt_V3YMkZxZ1hZLvW",
+        "text": "Cyber Security > Operating Systems",
+        "subjects": [],
+        "_id": "6814a8ab0d8403989c02ac83",
+        "guides": [
+            "Understanding operating systems"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "BNUKEQ4YpZmIhSPQdkHgU",
+        "text": "Cyber Security > Operating Systems > Windows",
+        "subjects": [
+            "Microsoft Windows Basics"
+        ],
+        "_id": "6814a8ad0d8403989c02ac8a",
+        "guides": [
+            "What is Microsoft Windows?"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "4frVcjYI1VlVU9hQgpwcT",
+        "text": "Cyber Security > Operating Systems > Linux",
+        "subjects": [
+            "Linux Basics"
+        ],
+        "_id": "6814a8ae0d8403989c02ac91",
+        "guides": [
+            "What is Linux?"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "dztwr-DSckggQbcNIi4_2",
+        "text": "Cyber Security > Operating Systems > MacOS",
+        "subjects": [
+            "MacOS basics "
+        ],
+        "_id": "6814a8af0d8403989c02ac98",
+        "guides": [
+            "What is MacOS"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "02aaEP9E5tlefeGBxf_Rj",
+        "text": "Cyber Security > Operating Systems > Learn following for each > Installation and Configuration",
+        "subjects": [],
+        "_id": "6814a8b10d8403989c02ac9f",
+        "guides": [
+            "Installing Windows",
+            "Installing Linux",
+            "Installing MacOS"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "yXOGqlufAZ69uiBzKFfh6",
+        "text": "Cyber Security > Operating Systems > Learn following for each > Different Versions and Differences",
+        "subjects": [],
+        "_id": "6814a8b50d8403989c02aca6"
+    },
+    {
+        "nodeId": "MGitS_eJBoY99zOR-W3F4",
+        "text": "Cyber Security > Operating Systems > Learn following for each > Navigating using GUI and CLI",
+        "subjects": [
+            "Windows Terminal Basics",
+            "Linux Terminal Basics",
+            "MacOS Terminal Basics"
+        ],
+        "_id": "6814a8b60d8403989c02acad",
+        "isOptional": false
+    },
+    {
+        "nodeId": "bTfL7cPOmBBFl-eHxUJI6",
+        "text": "Cyber Security > Operating Systems > Learn following for each > Understand Permissions",
+        "subjects": [
+            "Managing Permissions in Windows",
+            "Managing Permissions in Linux",
+            "Managing Permissions in MacOS"
+        ],
+        "_id": "6814a8d60d8403989c02acb4",
+        "isOptional": false
+    },
+    {
+        "nodeId": "Ot3LGpM-CT_nKsNqIKIye",
+        "text": "Cyber Security > Operating Systems > Learn following for each > Installing Software and Applications",
+        "subjects": [],
+        "_id": "6814a8d90d8403989c02acbb"
+    },
+    {
+        "nodeId": "zRXyoJMap9irOYo3AdHE8",
+        "text": "Cyber Security > Operating Systems > Learn following for each > Performing CRUD on Files",
+        "subjects": [],
+        "_id": "6814a8db0d8403989c02acc2"
+    },
+    {
+        "nodeId": "xeRWOX1fWQDLNLWMAFTEe",
+        "text": "Cyber Security > Operating Systems > Learn following for each > Troubleshooting",
+        "subjects": [],
+        "_id": "6814a8de0d8403989c02acc9",
+        "guides": [
+            "Basic Troubleshooting Techniques"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "WDrSO7wBNn-2jB8mcyT7j",
+        "text": "Cyber Security > Operating Systems > Learn following for each > Common Commands",
+        "subjects": [],
+        "_id": "6814a8e00d8403989c02acd0",
+        "guides": [
+            "Linux Basic commands",
+            "Windows Basic commands",
+            "MacOS Basic commands"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "OXUd1UPPsBhNoUGLKZJGV",
+        "text": "Cyber Security > Networking Knowledge > Understand the OSI Model",
+        "subjects": [
+            "OSI Model Overview"
+        ],
+        "_id": "6814a8e30d8403989c02acd7",
+        "isOptional": false,
+        "guides": [
+            "Understanding the OSI Model"
+        ]
+    },
+    {
+        "nodeId": "gSLr-Lc119eX9Ig-kDzJ2",
+        "text": "Cyber Security > Networking Knowledge",
+        "subjects": [
+            " Computer Networking Fundamentals"
+        ],
+        "_id": "6814a8e40d8403989c02acde",
+        "isOptional": false
+    },
+    {
+        "nodeId": "ViF-mpR17MB3_KJ1rV8mS",
+        "text": "Cyber Security > Networking Knowledge > Common Protocols and their Uses",
+        "subjects": [
+            "Introduction to Networking Protocols"
+        ],
+        "_id": "6814a8e50d8403989c02ace5",
+        "isOptional": false,
+        "guides": [
+            "What is a networking protocol?"
+        ]
+    },
+    {
+        "nodeId": "0tx2QYDYXhm85iYrCWd9U",
+        "text": "Cyber Security > Networking Knowledge > Common Ports and their Uses",
+        "subjects": [],
+        "_id": "6814a8e60d8403989c02acec"
+    },
+    {
+        "nodeId": "dJ0NUsODFhk52W2zZxoPh",
+        "text": "Cyber Security > Networking Knowledge > SSL and TLS Basics",
+        "subjects": [
+            "SSL/TLS Basics"
+        ],
+        "_id": "6814a8e70d8403989c02acf3",
+        "isOptional": false,
+        "guides": [
+            "Understanding SSL and TLS"
+        ]
+    },
+    {
+        "nodeId": "umbMBQ0yYmB5PgWfY6zfO",
+        "text": "Cyber Security > Networking Knowledge > Basics of NAS and SAN",
+        "subjects": [
+            "NAS and SAN Fundamentals"
+        ],
+        "_id": "6814a8e90d8403989c02acfa",
+        "isOptional": false,
+        "guides": [
+            "What is NAS and SAN?"
+        ]
+    },
+    {
+        "nodeId": "E8Z7qFFW-I9ivr0HzoXCq",
+        "text": "Cyber Security > Networking Knowledge > Basics of Subnetting",
+        "subjects": [
+            "Introduction to Subnetting "
+        ],
+        "_id": "6814a8ec0d8403989c02ad01",
+        "isOptional": false,
+        "guides": [
+            "What is subnetting?"
+        ]
+    },
+    {
+        "nodeId": "2nQfhnvBjJg1uDZ28aE4v",
+        "text": "Cyber Security > Networking Knowledge > Public vs Private IP Addresses",
+        "subjects": [
+            "Public vs Private ID Addresses"
+        ],
+        "_id": "6814a8ed0d8403989c02ad08",
+        "isOptional": false,
+        "guides": [
+            "Public vs Private IP Addresses"
+        ]
+    },
+    {
+        "nodeId": "0TWwox-4pSwuXojI8ixFO",
+        "text": "Cyber Security > Networking Knowledge > IP Terminology > localhost",
+        "subjects": [],
+        "_id": "6814a8f00d8403989c02ad0f",
+        "guides": [
+            "What is a localhost?"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "W_oloLu2Euz5zRSy7v_T8",
+        "text": "Cyber Security > Networking Knowledge > IP Terminology > loopback",
+        "subjects": [],
+        "_id": "6814a8f20d8403989c02ad16",
+        "guides": [
+            "What is a loopback?"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "PPIH1oHW4_ZDyD3U3shDg",
+        "text": "Cyber Security > Networking Knowledge > IP Terminology > CIDR",
+        "subjects": [],
+        "_id": "6814a8f50d8403989c02ad1d",
+        "guides": [
+            "What is CIDR?"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "5rKaFtjYx0n2iF8uTLs8X",
+        "text": "Cyber Security > Networking Knowledge > IP Terminology > default gateway",
+        "subjects": [],
+        "_id": "6814a8f70d8403989c02ad24",
+        "guides": [
+            "What is default gateway?"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "f-v8qtweWXFY_Ryo3oYUF",
+        "text": "Cyber Security > Networking Knowledge > IP Terminology > subnet mask",
+        "subjects": [],
+        "_id": "6814a8fa0d8403989c02ad2b",
+        "guides": [
+            "What is a subnet mask?"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "d5Cv3EXf6OXW19yPJ4x6e",
+        "text": "Cyber Security > Networking Knowledge > Understand the Terminology > VLAN",
+        "subjects": [],
+        "_id": "6814a8fc0d8403989c02ad32",
+        "guides": [
+            "What is VLAN?"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "gfpvDQz61I3zTB7tGu7vp",
+        "text": "Cyber Security > Networking Knowledge > Understand the Terminology > DMZ",
+        "subjects": [],
+        "_id": "6814a8ff0d8403989c02ad39",
+        "guides": [
+            "What is DMZ?"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "M52V7hmG4ORf4TIVw3W3J",
+        "text": "Cyber Security > Networking Knowledge > Understand the Terminology > ARP",
+        "subjects": [],
+        "_id": "6814a9010d8403989c02ad40",
+        "guides": [
+            "What is ARP?"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "ZTC5bLWEIQcdmowc7sk_E",
+        "text": "Cyber Security > Networking Knowledge > Understand the Terminology > VM",
+        "subjects": [],
+        "_id": "6814a9040d8403989c02ad47",
+        "guides": [
+            "What is a virtual machine?"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "T4312p70FqRBkzVfWKMaR",
+        "text": "Cyber Security > Networking Knowledge > Understand the Terminology > DHCP",
+        "subjects": [],
+        "_id": "6814a9060d8403989c02ad4e",
+        "guides": [
+            "What is DHCP?"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "ORIdKG8H97VkBUYpiDtXf",
+        "text": "Cyber Security > Networking Knowledge > Understand the Terminology > DNS",
+        "subjects": [],
+        "_id": "6814a9090d8403989c02ad55",
+        "guides": [
+            "What is DNS?"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "Kkd3f_0OYNCdpDgrJ-_Ju",
+        "text": "Cyber Security > Networking Knowledge > Understand the Terminology > NAT",
+        "subjects": [],
+        "_id": "6814a90c0d8403989c02ad5c",
+        "guides": [
+            "What is NAT?"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "FdoqB2---uDAyz6xZjk_u",
+        "text": "Cyber Security > Networking Knowledge > Understand the Terminology > IP",
+        "subjects": [],
+        "_id": "6814a90e0d8403989c02ad63",
+        "guides": [
+            "What is IP?"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "lwSFIbIX-xOZ0QK2sGFb1",
+        "text": "Cyber Security > Networking Knowledge > Understand the Terminology > Router",
+        "subjects": [],
+        "_id": "6814a9110d8403989c02ad6a",
+        "guides": [
+            "What is a router?"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "r9byGV8XuBPzoqj5ZPf2W",
+        "text": "Cyber Security > Networking Knowledge > Understand the Terminology > Switch",
+        "subjects": [],
+        "_id": "6814a9140d8403989c02ad71",
+        "guides": [
+            "What is a switch in networking?"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "gTozEpxJeG1NTkVBHH-05",
+        "text": "Cyber Security > Networking Knowledge > Understand the Terminology > VPN",
+        "subjects": [],
+        "_id": "6814a9160d8403989c02ad78",
+        "guides": [
+            "What is VPN?"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "LrwTMH_1fTd8iB9wJg-0t",
+        "text": "Cyber Security > Networking Knowledge > Understand these > MAN",
+        "subjects": [],
+        "_id": "6814a9190d8403989c02ad7f"
+    },
+    {
+        "nodeId": "xWxusBtMEWnd-6n7oqjHz",
+        "text": "Cyber Security > Networking Knowledge > Understand these > LAN",
+        "subjects": [],
+        "_id": "6814a91a0d8403989c02ad86",
+        "guides": [
+            "What is a metropolitan area network (LAN)?"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "vCkTJMkDXcQmwsmeNUAX5",
+        "text": "Cyber Security > Networking Knowledge > Understand these > WAN",
+        "subjects": [],
+        "_id": "6814a91c0d8403989c02ad8d",
+        "guides": [
+            "What is a metropolitan wide network (WAN)?"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "QCVYF1rmPsMVtklBNDNaB",
+        "text": "Cyber Security > Networking Knowledge > Understand these > WLAN",
+        "subjects": [],
+        "_id": "6814a91e0d8403989c02ad94",
+        "guides": [
+            "What is a Wireless Local Area Network (WLAN)?"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "R5HEeh6jwpQDo27rz1KSH",
+        "text": "Cyber Security > Networking Knowledge > Functions of each > DHCP",
+        "subjects": [],
+        "_id": "6814a9210d8403989c02ad9b",
+        "guides": [
+            "What is DHCP?"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "r1IKvhpwg2umazLGlQZL1",
+        "text": "Cyber Security > Networking Knowledge > Functions of each > DNS",
+        "subjects": [],
+        "_id": "6814a9220d8403989c02ada2",
+        "guides": [
+            "What is DNS?"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "tf0TymdPHbplDHvuVIIh4",
+        "text": "Cyber Security > Networking Knowledge > Functions of each > NTP",
+        "subjects": [],
+        "_id": "6814a9240d8403989c02ada9",
+        "guides": [
+            "What is NTP?"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "hN8p5YBcSaPm-byQUIz8L",
+        "text": "Cyber Security > Networking Knowledge > Functions of each > IPAM",
+        "subjects": [],
+        "_id": "6814a9260d8403989c02adb0",
+        "guides": [
+            "What is IPAM?"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "P0ZhAXd_H-mTOMr13Ag31",
+        "text": "Cyber Security > Networking Knowledge > Network Topologies > Star",
+        "subjects": [],
+        "_id": "6814a9280d8403989c02adb7",
+        "guides": [
+            "What is a star network topology?"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "9vEUVJ8NTh0wKyIE6-diY",
+        "text": "Cyber Security > Networking Knowledge > Network Topologies > Ring",
+        "subjects": [],
+        "_id": "6814a9290d8403989c02adbe",
+        "guides": [
+            "What is a ring network topology?"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "PYeF15e7iVB9seFrrO7W6",
+        "text": "Cyber Security > Networking Knowledge > Network Topologies > Mesh",
+        "subjects": [],
+        "_id": "6814a92b0d8403989c02adc5",
+        "guides": [
+            "What is a mesh network topology?"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "0DWh4WmLK_ENDuqQmQcu4",
+        "text": "Cyber Security > Networking Knowledge > Network Topologies > Bus",
+        "subjects": [],
+        "_id": "6814a92d0d8403989c02adcc",
+        "guides": [
+            "What is a bus network topology?"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "8Mog890Lj-gVBpWa05EzT",
+        "text": "Cyber Security > Networking Knowledge > Network Protocols > SSH",
+        "subjects": [
+            "Working with SSH"
+        ],
+        "_id": "6814a92f0d8403989c02add3",
+        "isOptional": false,
+        "guides": [
+            "What is SSH?"
+        ]
+    },
+    {
+        "nodeId": "Ia6M1FKPNpqLDiWx7CwDh",
+        "text": "Cyber Security > Networking Knowledge > Network Protocols > RDP",
+        "subjects": [],
+        "_id": "6814a9310d8403989c02adda",
+        "guides": [
+            "What is RDP?"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "ftYYMxRpVer-jgSswHLNa",
+        "text": "Cyber Security > Networking Knowledge > Network Protocols > FTP",
+        "subjects": [],
+        "_id": "6814a93a0d8403989c02ade1",
+        "guides": [
+            "What is FTP?"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "YEy6o-clTBKZp1yOkLwNb",
+        "text": "Cyber Security > Networking Knowledge > Network Protocols > SFTP",
+        "subjects": [],
+        "_id": "6814a93c0d8403989c02ade8",
+        "guides": [
+            "What is SFTP?"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "3Awm221OJHxXNLiL9yxfd",
+        "text": "Cyber Security > Networking Knowledge > Network Protocols > HTTP / HTTPS",
+        "subjects": [
+            "HTTP/HTTPS Fundamentals"
+        ],
+        "_id": "6814a9400d8403989c02adef",
+        "isOptional": false,
+        "guides": [
+            "HTTP / HTTPS basics",
+            "HTTP vs HTTPS"
+        ]
+    },
+    {
+        "nodeId": "LKK1A5-xawA7yCIAWHS8P",
+        "text": "Cyber Security > Networking Knowledge > Network Protocols > SSL / TLS",
+        "subjects": [
+            "SSL/TLS Fundamentals"
+        ],
+        "_id": "6814a9420d8403989c02adf6",
+        "isOptional": false,
+        "guides": [
+            "SSL/TSL basics"
+        ]
+    },
+    {
+        "nodeId": "lbAgU5lR1O7L_5mCbNz_D",
+        "text": "Cyber Security > Certifications > CompTIA A+",
+        "subjects": [],
+        "_id": "6814a94f0d8403989c02adfd",
+        "guides": [
+            "CompTIA A+ Certification",
+            "How to pass the CompTIA a+ Certification"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "p34Qwlj2sjwEPR2ay1WOK",
+        "text": "Cyber Security > Certifications > CompTIA Linux+",
+        "subjects": [],
+        "_id": "6814a9500d8403989c02ae04",
+        "guides": [
+            "CompTIA Linux+ Certification",
+            "How to pass the CompTIA Linux+ Certification"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "4RGbNOfMPDbBcvUFWTTCV",
+        "text": "Cyber Security > Certifications > CompTIA Network+",
+        "subjects": [],
+        "_id": "6814a9510d8403989c02ae0b",
+        "guides": [
+            "CompTIA Network+ Certification",
+            "How to pass the CompTIA Network+ Certification"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "4RD22UZATfL8dc71YkJwQ",
+        "text": "Cyber Security > Certifications > CCNA",
+        "subjects": [],
+        "_id": "6814a9530d8403989c02ae12",
+        "guides": [
+            "CCNA certification",
+            "How to pass the CCNA Certification"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "AxeDcKK3cUtEojtHQPBw7",
+        "text": "Cyber Security > Certifications > CompTIA Security+",
+        "subjects": [],
+        "_id": "6814a9540d8403989c02ae19",
+        "guides": [
+            "CompTIA Security+ Certification",
+            "How to pass the CompTIA Security+ Certification"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "AAo7DXB7hyBzO6p05gx1i",
+        "text": "Cyber Security > Certifications > CEH",
+        "subjects": [],
+        "_id": "6814a9560d8403989c02ae20",
+        "guides": [
+            "Certified Ethical Hacker (CEH)"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "lqFp4VLY_S-5tAbhNQTew",
+        "text": "Cyber Security > Certifications > CISA",
+        "subjects": [],
+        "_id": "6814a9580d8403989c02ae27",
+        "guides": [
+            "Certified Information Systems Auditor (CISA)"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "s86x24SHPEbbOB9lYNU-w",
+        "text": "Cyber Security > Certifications > CISM",
+        "subjects": [],
+        "_id": "6814a95a0d8403989c02ae2e",
+        "guides": [
+            "Certified Information Security Manager (CISM)"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "nlmATCTgHoIoMcEOW8bUW",
+        "text": "Cyber Security > Certifications > GSEC",
+        "subjects": [],
+        "_id": "6814a95b0d8403989c02ae35",
+        "guides": [
+            "GIAC Security Essentials Certification (GSEC)"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "t4h9rEKWz5Us0qJKXhxlX",
+        "text": "Cyber Security > Certifications > GPEN",
+        "subjects": [],
+        "_id": "6814a95e0d8403989c02ae3c",
+        "guides": [
+            "GIAC Penetration Tester (GPEN)"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "rwniCTWfYpKP5gi02Pa9f",
+        "text": "Cyber Security > Certifications > GWAPT",
+        "subjects": [],
+        "_id": "6814a95f0d8403989c02ae43",
+        "guides": [
+            "GIAC Web Application Penetration Tester Certification (GWAPT) "
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "ZiUT-lyIBfHTzG-dwSy96",
+        "text": "Cyber Security > Certifications > GIAC",
+        "subjects": [],
+        "_id": "6814a9630d8403989c02ae4a",
+        "guides": [
+            "GIAC certification"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "SwVGVP2bbCFs2uNg9Qtxb",
+        "text": "Cyber Security > Certifications > OSCP",
+        "subjects": [],
+        "_id": "6814a9640d8403989c02ae51",
+        "guides": [
+            "OSCP certification"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "rA1skdztev3-8VmAtIlmr",
+        "text": "Cyber Security > Certifications > CREST",
+        "subjects": [],
+        "_id": "6814a9660d8403989c02ae58",
+        "guides": [
+            "CREST certification"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "BqvijNoRzSGYLCMP-6hhr",
+        "text": "Cyber Security > Certifications > CISSP",
+        "subjects": [],
+        "_id": "6814a9680d8403989c02ae5f",
+        "guides": [
+            "CISSP certification"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "AjywuCZdBi9atGUbetlUL",
+        "text": "Cyber Security > Networking Knowledge > Common Virtualization Technologies > VMWare",
+        "subjects": [
+            "Introduction to VMware"
+        ],
+        "_id": "6814a96d0d8403989c02ae66",
+        "isOptional": false,
+        "guides": [
+            "What is VMWare?"
+        ]
+    },
+    {
+        "nodeId": "vGVFhZXYOZOy4qFpLLbxp",
+        "text": "Cyber Security > Networking Knowledge > Common Virtualization Technologies > VirtualBox",
+        "subjects": [
+            "Introduction to VirtualBox"
+        ],
+        "_id": "6814a9700d8403989c02ae6d",
+        "isOptional": false,
+        "guides": [
+            "What is VirtualBox?"
+        ]
+    },
+    {
+        "nodeId": "BisNooct1vJDKaBKsGR7_",
+        "text": "Cyber Security > Networking Knowledge > Common Virtualization Technologies > esxi",
+        "subjects": [],
+        "_id": "6814a9720d8403989c02ae74",
+        "guides": [
+            "What is VMware ESXi?"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "jqX1A5hFF3Qznqup4lfiF",
+        "text": "Cyber Security > Networking Knowledge > Common Virtualization Technologies > proxmox",
+        "subjects": [
+            "Introduction to proxmox"
+        ],
+        "_id": "6814a9740d8403989c02ae7b",
+        "isOptional": false,
+        "guides": [
+            "What is Proxmox?"
+        ]
+    },
+    {
+        "nodeId": "CIoLaRv5I3sCr9tBnZHEi",
+        "text": "Cyber Security > Networking Knowledge > Basics of Virtualization > Hypervisor",
+        "subjects": [],
+        "_id": "6814a9760d8403989c02ae82",
+        "guides": [
+            "What is a hypervisor?",
+            "What is a virtual machine monitor (VMM)?"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "LocGETHz6ANYinNd5ZLsS",
+        "text": "Cyber Security > Networking Knowledge > Basics of Virtualization > GuestOS",
+        "subjects": [],
+        "_id": "6814a9780d8403989c02ae89",
+        "guides": [
+            "Understanding GestOS"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "p7w3C94xjLwSMm5qA8XlL",
+        "text": "Cyber Security > Networking Knowledge > Basics of Virtualization > HostOS",
+        "subjects": [],
+        "_id": "6814a97c0d8403989c02ae90",
+        "guides": [
+            "Introduction to HostOS"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "251sxqoHggQ4sZ676iX5w",
+        "text": "Cyber Security > Networking Knowledge > Basics of Virtualization > VM",
+        "subjects": [],
+        "_id": "6814a9830d8403989c02ae97",
+        "guides": [
+            "What is a virtual machine (VM)?"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "u-6xuZUyOrogh1bU4cwER",
+        "text": "Cyber Security > Networking Knowledge > Troubleshooting Tools > ipconfig",
+        "subjects": [],
+        "_id": "6814a98e0d8403989c02ae9e",
+        "isOptional": false,
+        "guides": [
+            "What is ipconfig?"
+        ]
+    },
+    {
+        "nodeId": "GuuY-Q6FZzfspB3wrH64r",
+        "text": "Cyber Security > Networking Knowledge > Troubleshooting Tools > ping",
+        "subjects": [],
+        "_id": "6814a9980d8403989c02aea5",
+        "guides": [
+            "What is a ping?"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "D2YYv1iTRGken75sHO0Gt",
+        "text": "Cyber Security > Networking Knowledge > Troubleshooting Tools > dig",
+        "subjects": [],
+        "_id": "6814a99a0d8403989c02aeac",
+        "guides": [
+            "What is Domain Information Groper (dig)?"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "2M3PRbGzo14agbEPe32ww",
+        "text": "Cyber Security > Networking Knowledge > Troubleshooting Tools > netstat",
+        "subjects": [],
+        "_id": "6814a99c0d8403989c02aeb3",
+        "guides": [
+            "What is netstat?"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "xFuWk7M-Vctk_xb7bHbWs",
+        "text": "Cyber Security > Networking Knowledge > Troubleshooting Tools > route",
+        "subjects": [],
+        "_id": "6814a99f0d8403989c02aeba",
+        "guides": [
+            "What is the route command?"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "xqwIEyGfdZFxk6QqbPswe",
+        "text": "Cyber Security > Networking Knowledge > Troubleshooting Tools > nmap",
+        "subjects": [],
+        "_id": "6814a9a10d8403989c02aec1",
+        "guides": [
+            "What is a network mapper (nmap)?"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "y8GaUNpaCT1Ai88wPOk6d",
+        "text": "Cyber Security > Networking Knowledge > Troubleshooting Tools > tcpdump",
+        "subjects": [],
+        "_id": "6814a9a30d8403989c02aec8",
+        "guides": [
+            "What is Tcpdump?"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "hkO3Ga6KctKODr4gos6qX",
+        "text": "Cyber Security > Networking Knowledge > Troubleshooting Tools > arp",
+        "subjects": [],
+        "_id": "6814a9a60d8403989c02aecf",
+        "guides": [
+            "What is the ARP protocol?"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "cSz9Qx3PGwmhq3SSKYKfg",
+        "text": "Cyber Security > Networking Knowledge > Troubleshooting Tools > tracert",
+        "subjects": [],
+        "_id": "6814a9aa0d8403989c02aed6",
+        "guides": [
+            "What is the ARP protocol?"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "tk4iG5i1Ml9w9KRO1tGJU",
+        "text": "Cyber Security > Networking Knowledge > Troubleshooting Tools > nslookup",
+        "subjects": [],
+        "_id": "6814a9ae0d8403989c02aedd",
+        "guides": [
+            "What is nslookup?"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "jr8JlyqmN3p7Ol3_kD9AH",
+        "text": "Cyber Security > Networking Knowledge > Troubleshooting Tools > iptables",
+        "subjects": [],
+        "_id": "6814a9b10d8403989c02aee4",
+        "guides": [
+            "What are iptables?"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "k6UX0BJho5arjGD2RWPgH",
+        "text": "Cyber Security > Networking Knowledge > Troubleshooting Tools > Packet Sniffers",
+        "subjects": [],
+        "_id": "6814a9b40d8403989c02aeeb",
+        "guides": [
+            "What are Packet Sniffers?"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "iJRQHzh5HXADuWpCouwxv",
+        "text": "Cyber Security > Networking Knowledge > Troubleshooting Tools > Port Scanners",
+        "subjects": [],
+        "_id": "6814a9b80d8403989c02aef2",
+        "guides": [
+            "What are Port Scanners?"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "K05mEAsjImyPge0hDtsU0",
+        "text": "Cyber Security > Networking Knowledge > Troubleshooting Tools > Protocol Analyzers",
+        "subjects": [],
+        "_id": "6814a9b90d8403989c02aef9",
+        "guides": [
+            "What are Protocol Analyzers?"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "lG6afUOx3jSQFxbH92otL",
+        "text": "Cyber Security > Networking Knowledge > Authentication Methodologies > Kerberos",
+        "subjects": [],
+        "_id": "6814a9bc0d8403989c02af00",
+        "isOptional": false,
+        "guides": [
+            "What is Kerberos?"
+        ]
+    },
+    {
+        "nodeId": "tH3RLnJseqOzRIbZMklHD",
+        "text": "Cyber Security > Networking Knowledge > Authentication Methodologies > RADIUS",
+        "subjects": [],
+        "_id": "6814a9be0d8403989c02af07",
+        "isOptional": false,
+        "guides": [
+            "What is Remote Authentication Dial-In User Service (RADIUS)?"
+        ]
+    },
+    {
+        "nodeId": "lV3swvD6QGLmD9iVfbKIF",
+        "text": "Cyber Security > Networking Knowledge > Authentication Methodologies > LDAP",
+        "subjects": [],
+        "_id": "6814a9c00d8403989c02af0e",
+        "isOptional": false,
+        "guides": [
+            "What is the Lightweight Directory Access Protocol (LDAP)?"
+        ]
+    },
+    {
+        "nodeId": "xL32OqDKm6O043TYgVV1r",
+        "text": "Cyber Security > Networking Knowledge > Authentication Methodologies > SSO",
+        "subjects": [],
+        "_id": "6814a9c30d8403989c02af15",
+        "guides": [
+            "What is SSO?"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "WXRaVCYwuGQsjJ5wyvbea",
+        "text": "Cyber Security > Networking Knowledge > Authentication Methodologies > Certificates",
+        "subjects": [],
+        "_id": "6814a9c60d8403989c02af1c",
+        "guides": [
+            "Introduction to Authentication Certificates"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "vYvFuz7lAJXZ1vK_4999a",
+        "text": "Cyber Security > Networking Knowledge > Authentication Methodologies > Local Auth",
+        "subjects": [],
+        "_id": "6814a9c80d8403989c02af23",
+        "guides": [
+            "What is Local Auth?"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "7tDxTcKJNAUxbHLPCnPFO",
+        "text": "Cyber Security > Security Skills and Knowledge > Blue / Red / Purple Teams",
+        "subjects": [],
+        "_id": "6814b1410d8403989c02af2a",
+        "guides": [
+            "Cybersecurity Teams: Red, Blue & Purple Team"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "XwRCZf-yHJsXVjaRfb3R4",
+        "text": "Cyber Security > Security Skills and Knowledge > False Negative / False Positive",
+        "subjects": [],
+        "_id": "6814b1410d8403989c02af31",
+        "guides": [
+            "Understanding False Negatives and False Positives in Cybersecurity"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "M6uwyD4ibguxytf1od-og",
+        "text": "Cyber Security > Security Skills and Knowledge > True Negative / True Positive",
+        "subjects": [],
+        "_id": "6814b1430d8403989c02af38",
+        "guides": [
+            "Understanding True Negatives and True Positives in Cybersecurity"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "wN5x5pY53B8d0yopa1z8F",
+        "text": "Cyber Security > Security Skills and Knowledge > Basics of Threat Intel, OSINT",
+        "subjects": [],
+        "_id": "6814b1440d8403989c02af3f",
+        "isOptional": false,
+        "guides": [
+            "What is OSINT?",
+            "What is Threat Intelligence?"
+        ]
+    },
+    {
+        "nodeId": "zQx_VUS1zRmF4zCGjJD5-",
+        "text": "Cyber Security > Security Skills and Knowledge > Understand Handshakes",
+        "subjects": [],
+        "_id": "6814b1460d8403989c02af46",
+        "guides": [
+            "Understanding handshaking"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "uz6ELaLEu9U4fHVfnQiOa",
+        "text": "Cyber Security > Security Skills and Knowledge > Understand CIA Triad",
+        "subjects": [],
+        "_id": "6814b1470d8403989c02af4d",
+        "guides": [
+            "The CIA Triad: Confidentiality, Integrity, and Availability"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "cvI8-sxY5i8lpelW9iY_5",
+        "text": "Cyber Security > Security Skills and Knowledge > Privilege Escalation",
+        "subjects": [],
+        "_id": "6814b1490d8403989c02af54",
+        "guides": [
+            "Understanding privilege escalatino"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "fyOYVqiBqyKC4aqc6-y0q",
+        "text": "Cyber Security > Security Skills and Knowledge > Web Based Attacks and OWASP10",
+        "subjects": [],
+        "_id": "6814b14a0d8403989c02af5b",
+        "guides": [
+            "What is OWASP?",
+            "What is the OWASP Top 10?"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "v7CD_sHqLWbm9ibXXESIK",
+        "text": "Cyber Security > Security Skills and Knowledge > Learn how Malware works and Types",
+        "subjects": [
+            "Understanding Malware"
+        ],
+        "_id": "6814b14b0d8403989c02af62",
+        "isOptional": false,
+        "guides": [
+            "What is a malware",
+            "Types of malware"
+        ]
+    },
+    {
+        "nodeId": "HavEL0u65ZxHt92TfbLzk",
+        "text": "Cyber Security > Security Skills and Knowledge > Core Concepts of Zero Trust",
+        "subjects": [],
+        "_id": "6814b14c0d8403989c02af69",
+        "guides": [
+            "What is the Zero Trust security model?"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "ggAja18sBUUdCfVsT0vCv",
+        "text": "Cyber Security > Security Skills and Knowledge > Understand the Definition of Risk",
+        "subjects": [],
+        "_id": "6814b14e0d8403989c02af70",
+        "guides": [
+            "What is Cybersecurity Risk?"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "kqT0FRLt9Ak9P8PhHldO-",
+        "text": "Cyber Security > Security Skills and Knowledge > Roles of Compliance and Auditors",
+        "subjects": [],
+        "_id": "6814b14e0d8403989c02af77",
+        "guides": [
+            "What is a Compliance Audit?"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "9asy3STW4oTYYHcUazaRj",
+        "text": "Cyber Security > Security Skills and Knowledge > Understand Backups and Resiliency",
+        "subjects": [],
+        "_id": "6814b14f0d8403989c02af7e",
+        "guides": [
+            "What are computer backups?"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "H38Vb7xvuBJXVzgPBdRdT",
+        "text": "Cyber Security > Security Skills and Knowledge > Cyber Kill Chain",
+        "subjects": [],
+        "_id": "6814b1510d8403989c02af85",
+        "guides": [
+            "The Cyber Kill Chain model explained"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "pnfVrOjDeG1uYAeqHxhJP",
+        "text": "Cyber Security > Security Skills and Knowledge > MFA & 2FA",
+        "subjects": [
+            "Authentication Methods"
+        ],
+        "_id": "6814b1520d8403989c02af8c",
+        "isOptional": false,
+        "guides": [
+            "What is Multi-Factor Authentication (MFA)?",
+            "What is Two-Factor Authentication (2FA)?"
+        ]
+    },
+    {
+        "nodeId": "_hYN0gEi9BL24nptEtXWU",
+        "text": "Cyber Security > Security Skills and Knowledge",
+        "subjects": [],
+        "_id": "6814b1530d8403989c02af93"
+    },
+    {
+        "nodeId": "bj5YX8zhlam0yoNckL8e4",
+        "text": "Cyber Security > Security Skills and Knowledge > Honeypots",
+        "subjects": [],
+        "_id": "6814b1550d8403989c02af9a",
+        "guides": [
+            "Increasing security with honeypots"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "_S25EOGS3P8647zLM5i-g",
+        "text": "Cyber Security > Security Skills and Knowledge > Operating System Hardening",
+        "subjects": [],
+        "_id": "6814b1560d8403989c02afa1",
+        "guides": [
+            "Introduction to Operating System Hardening"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "aDF7ZcOX9uR8l0W4aqhYn",
+        "text": "Cyber Security > Security Skills and Knowledge > Understand Concept of Isolation",
+        "subjects": [],
+        "_id": "6814b1590d8403989c02afa8",
+        "guides": [
+            "The role of Isolation in cybersecurity"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "FJsEBOFexbDyAj86XWBCc",
+        "text": "Cyber Security > Security Skills and Knowledge > Basics of IDS and IPS",
+        "subjects": [],
+        "_id": "6814b15a0d8403989c02afaf",
+        "guides": [
+            "What is IDS and IPS?"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "WG7DdsxESm31VcLFfkVTz",
+        "text": "Cyber Security > Security Skills and Knowledge > Authentication vs Authorization",
+        "subjects": [],
+        "_id": "6814b15b0d8403989c02afb6",
+        "guides": [
+            "Authentication vs Authorization"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "rzY_QsvnC1shDTPQ-til0",
+        "text": "Cyber Security > Security Skills and Knowledge > Understand Common Hacking Tools",
+        "subjects": [
+            "Introduction to Ethical Hacking"
+        ],
+        "_id": "6814b15d0d8403989c02afbd",
+        "isOptional": false,
+        "guides": [
+            "Common hacking tools"
+        ]
+    },
+    {
+        "nodeId": "Lg7mz4zeCToEzZBFxYuaU",
+        "text": "Cyber Security > Security Skills and Knowledge > Understand Common Exploit Frameworks",
+        "subjects": [],
+        "_id": "6814b15f0d8403989c02afc4",
+        "guides": [
+            "What are exploit frameworks?"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "Rae-f9DHDZuwIwW6eRtKF",
+        "text": "Cyber Security > Security Skills and Knowledge > Understand Concept of Defense in Depth",
+        "subjects": [],
+        "_id": "6814b1600d8403989c02afcb",
+        "guides": [
+            "Understanding Defense in Depth"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "Ec6EairjFJLCHc7b-1xxe",
+        "text": "Cyber Security > Security Skills and Knowledge > Understand Concept of Runbooks",
+        "subjects": [],
+        "_id": "6814b1620d8403989c02afd2",
+        "guides": [
+            "What are runbooks?"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "7KLGFfco-hw7a62kXtS3d",
+        "text": "Cyber Security > Security Skills and Knowledge > Understand Basics of Forensics",
+        "subjects": [],
+        "_id": "6814b1630d8403989c02afd9",
+        "guides": [
+            "Introduction to Digital Forensics"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "_x3BgX93N-Pt1_JK7wk0p",
+        "text": "Cyber Security > Security Skills and Knowledge > Basics and Concepts of Threat Hunting",
+        "subjects": [],
+        "_id": "6814b1640d8403989c02afe0",
+        "guides": [
+            "What is thread hunting in cybersecurity?"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "lcxAXtO6LoGd85nOFnLo8",
+        "text": "Cyber Security > Security Skills and Knowledge > Basics of Vulnerability Management",
+        "subjects": [],
+        "_id": "6814b1650d8403989c02afe7"
+    },
+    {
+        "nodeId": "uoGA4T_-c-2ip_zfEUcJJ",
+        "text": "Cyber Security > Security Skills and Knowledge > Basics of Reverse Engineering",
+        "subjects": [
+            "Introduction to Reverse Engineering"
+        ],
+        "_id": "6814b1670d8403989c02afee",
+        "isOptional": false,
+        "guides": [
+            "What is reverse engineering in cybersecurity?"
+        ]
+    },
+    {
+        "nodeId": "NkAAQikwH-A6vrF8fWpuB",
+        "text": "Cyber Security > Security Skills and Knowledge > Penetration Testing Rules of Engagement",
+        "subjects": [],
+        "_id": "6814b1680d8403989c02aff5",
+        "guides": [
+            "Penetration Testing Rules of Engagement"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "PUgPgpKio4Npzs86qEXa7",
+        "text": "Cyber Security > Security Skills and Knowledge > Perimiter vs DMZ vs Segmentation",
+        "subjects": [],
+        "_id": "6814b16a0d8403989c02affc",
+        "guides": [
+            "Perimiter vs DMZ vs Segmentation"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "7obusm5UtHwWMcMMEB3lt",
+        "text": "Cyber Security > Security Skills and Knowledge > Attack Types and Differences > Phishing",
+        "subjects": [],
+        "_id": "6814b1700d8403989c02b003",
+        "guides": [
+            "What is phising?"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "M65fCl72qlF0VTbGNT6du",
+        "text": "Cyber Security > Security Skills and Knowledge > Attack Types and Differences > Whishing",
+        "subjects": [],
+        "_id": "6814b50c0d8403989c02b00a",
+        "guides": [
+            "What is whising?"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "KSwl6sX2W47vUmytpm8LH",
+        "text": "Cyber Security > Security Skills and Knowledge > Attack Types and Differences > Whaling",
+        "subjects": [],
+        "_id": "6814b50d0d8403989c02b011",
+        "guides": [
+            "What is whaling?"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "d4U6Jq-CUB1nNN2OCFoum",
+        "text": "Cyber Security > Security Skills and Knowledge > Attack Types and Differences > Smishing",
+        "subjects": [],
+        "_id": "6814b5100d8403989c02b018",
+        "guides": [
+            "What is smishing?"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "cbEMUyg_btIPjdx-XqIM5",
+        "text": "Cyber Security > Security Skills and Knowledge > Attack Types and Differences > Spam vs Spim",
+        "subjects": [],
+        "_id": "6814b5130d8403989c02b01f",
+        "guides": [
+            "spam vs spim"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "FD0bkmxNpPXiUB_NevEUf",
+        "text": "Cyber Security > Security Skills and Knowledge > Attack Types and Differences > Shoulder Surfing",
+        "subjects": [],
+        "_id": "6814b51c0d8403989c02b026",
+        "guides": [
+            "What is shoulder surfing?"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "o-keJgF9hmifQ_hUD91iN",
+        "text": "Cyber Security > Security Skills and Knowledge > Attack Types and Differences > Tailgating",
+        "subjects": [],
+        "_id": "6814b51e0d8403989c02b02d",
+        "guides": [
+            "What is tailgating?"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "Iu0Qtk13RjrhHpSlm0uyh",
+        "text": "Cyber Security > Security Skills and Knowledge > Attack Types and Differences > Dumpster Diving",
+        "subjects": [],
+        "_id": "6814b5210d8403989c02b034",
+        "guides": [
+            "What is dumpster diving?"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "v9njgIxZyabJZ5iND3JGc",
+        "text": "Cyber Security > Security Skills and Knowledge > Attack Types and Differences > Zero day",
+        "subjects": [],
+        "_id": "6814b5240d8403989c02b03b",
+        "guides": [
+            "What is a Zero-day Attack?"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "O1VceThdxRlgQ6DcGyY7Y",
+        "text": "Cyber Security > Security Skills and Knowledge > Attack Types and Differences > Social Engineering",
+        "subjects": [],
+        "_id": "6814b5270d8403989c02b042",
+        "guides": [
+            "Understanding social engineering"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "UU_inxa8Y2lLP2BRhdLDT",
+        "text": "Cyber Security > Security Skills and Knowledge > Attack Types and Differences > Reconnaissance",
+        "subjects": [],
+        "_id": "6814b52a0d8403989c02b049",
+        "guides": [
+            "What is Cyber Reconnaissance"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "ZEgxmvjWPp5NofLFz_FTJ",
+        "text": "Cyber Security > Security Skills and Knowledge > Attack Types and Differences > Impersonation",
+        "subjects": [],
+        "_id": "6814b52d0d8403989c02b050",
+        "guides": [
+            "What is an Impersonation Attack?"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "dcvuKHq0nHgHLcLwtl4IJ",
+        "text": "Cyber Security > Security Skills and Knowledge > Attack Types and Differences > Watering Hole Attack",
+        "subjects": [],
+        "_id": "6814b5700d8403989c02b057",
+        "guides": [
+            "What is a Watering Hole Attack?"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "cO70zHvHgBAH29khF-hBW",
+        "text": "Cyber Security > Security Skills and Knowledge > Attack Types and Differences > Drive by Attack",
+        "subjects": [],
+        "_id": "6814b5750d8403989c02b05e",
+        "guides": [
+            "What is a Drive-by Attack?"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "0LeDwj_tMaXjQBBOUJ5CL",
+        "text": "Cyber Security > Security Skills and Knowledge > Attack Types and Differences > Typo Squatting",
+        "subjects": [],
+        "_id": "6814b57a0d8403989c02b065",
+        "guides": [
+            "What is typo squatting?"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "Q0i-plPQkb_NIvOQBVaDd",
+        "text": "Cyber Security > Security Skills and Knowledge > Attack Types and Differences > Brute Force vs Password Spray",
+        "subjects": [],
+        "_id": "6814b57f0d8403989c02b06c",
+        "guides": [
+            "Brute Force vs Password Spray"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "jqWhR6oTyX6yolUBv71VC",
+        "text": "Cyber Security > Security Skills and Knowledge > Basics of Cryptography > Salting",
+        "subjects": [
+            "Basics of Cryptography"
+        ],
+        "_id": "6814b5850d8403989c02b073",
+        "isOptional": false,
+        "guides": [
+            "What is salting in cryptography?"
+        ]
+    },
+    {
+        "nodeId": "0UZmAECMnfioi-VeXcvg8",
+        "text": "Cyber Security > Security Skills and Knowledge > Basics of Cryptography > Hashing",
+        "subjects": [
+            "Basics of Cryptography"
+        ],
+        "_id": "6814b5860d8403989c02b07a",
+        "isOptional": false,
+        "guides": [
+            "What is hashing?"
+        ]
+    },
+    {
+        "nodeId": "rmR6HJqEhHDgX55Xy5BAW",
+        "text": "Cyber Security > Security Skills and Knowledge > Basics of Cryptography > Key Exchange",
+        "subjects": [
+            "Basics of Cryptography"
+        ],
+        "_id": "6814b5890d8403989c02b081",
+        "isOptional": false,
+        "guides": [
+            "Understanding cryptographic Key exchange "
+        ]
+    },
+    {
+        "nodeId": "7svh9qaaPp0Hz23yinIye",
+        "text": "Cyber Security > Security Skills and Knowledge > Basics of Cryptography > Private vs Public Keys",
+        "subjects": [
+            "Basics of Cryptography"
+        ],
+        "_id": "6814b58c0d8403989c02b088",
+        "isOptional": false,
+        "guides": [
+            "Private vs Public Keys"
+        ]
+    },
+    {
+        "nodeId": "fxyJxrf3mnFTa3wXk1MCW",
+        "text": "Cyber Security > Security Skills and Knowledge > Basics of Cryptography > PKI",
+        "subjects": [
+            "Basics of Cryptography"
+        ],
+        "_id": "6814b58e0d8403989c02b08f",
+        "isOptional": false,
+        "guides": [
+            "What is Public Key Infrastructure (PKI)?"
+        ]
+    },
+    {
+        "nodeId": "kxlg6rpfqqoBfmMMg3EkJ",
+        "text": "Cyber Security > Security Skills and Knowledge > Basics of Cryptography > Obfuscation",
+        "subjects": [
+            "Basics of Cryptography"
+        ],
+        "_id": "6814b5910d8403989c02b096",
+        "isOptional": false,
+        "guides": [
+            "What is obfuscation in crytography?"
+        ]
+    },
+    {
+        "nodeId": "AY-hoPGnAZSd1ExaYX8LR",
+        "text": "Cyber Security > Security Skills and Knowledge > Understand Frameworks > Diamond Model",
+        "subjects": [],
+        "_id": "6814b59f0d8403989c02b09d",
+        "guides": [
+            "Undestanding the diamond model"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "7Bmp4x6gbvWMuVDdGRUGj",
+        "text": "Cyber Security > Security Skills and Knowledge > Understand Frameworks > Kill Chain",
+        "subjects": [],
+        "_id": "6814b5a30d8403989c02b0a4",
+        "guides": [
+            "What is the kill chain model?"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "auR7fNyd77W2UA-PjXeJS",
+        "text": "Cyber Security > Security Skills and Knowledge > Understand Frameworks > ATT&CK",
+        "subjects": [],
+        "_id": "6814b5a60d8403989c02b0ab",
+        "guides": [
+            "What is ATT&CK (Adversarial Tactics, Techniques, and Common Knowledge)?"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "XyaWZZ45axJMKXoWwsyFj",
+        "text": "Cyber Security > Security Skills and Knowledge > Tools for Incident Response and Discovery > dig",
+        "subjects": [],
+        "_id": "6814b5a80d8403989c02b0b2",
+        "guides": [
+            "What is Domain Information Groper (dig)?"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "Hoou7kWyfB2wx_yFHug_H",
+        "text": "Cyber Security > Security Skills and Knowledge > Tools for Incident Response and Discovery > nmap",
+        "subjects": [],
+        "_id": "6814b5ac0d8403989c02b0b9",
+        "guides": [
+            "What is a network mapper?"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "yfTpp-ePuDB931FnvNB-Y",
+        "text": "Cyber Security > Security Skills and Knowledge > Tools for Incident Response and Discovery > ping",
+        "subjects": [],
+        "_id": "6814b5af0d8403989c02b0c0",
+        "guides": [
+            "What is ping?"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "fzdZF-nzIL69kaA7kwOCn",
+        "text": "Cyber Security > Security Skills and Knowledge > Tools for Incident Response and Discovery > arp",
+        "subjects": [],
+        "_id": "6814b5b20d8403989c02b0c7",
+        "guides": [
+            "What is the arp protocol?"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "D2ptX6ja_HvFEafMIzWOy",
+        "text": "Cyber Security > Security Skills and Knowledge > Tools for Incident Response and Discovery > cat",
+        "subjects": [],
+        "_id": "6814b5b50d8403989c02b0ce",
+        "guides": [
+            "What is the Linux cat command? "
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "9xbU_hrEOUtMm-Q09Fe6t",
+        "text": "Cyber Security > Security Skills and Knowledge > Tools for Incident Response and Discovery > dd",
+        "subjects": [],
+        "_id": "6814b5b70d8403989c02b0d5",
+        "guides": [
+            "What is the Linux dd command?"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "762Wf_Eh-3zq69CZZiIjR",
+        "text": "Cyber Security > Security Skills and Knowledge > Tools for Incident Response and Discovery > tail",
+        "subjects": [],
+        "_id": "6814b5ba0d8403989c02b0dc",
+        "guides": [
+            "What is the Linux tail command?"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "Cclbt4bNfkHwFwZOvJuLK",
+        "text": "Cyber Security > Security Skills and Knowledge > Tools for Incident Response and Discovery > hping",
+        "subjects": [],
+        "_id": "6814b5bc0d8403989c02b0e3",
+        "guides": [
+            "What is the Linux hping command?"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "VNmrb5Dm4UKUgL8JBfhnE",
+        "text": "Cyber Security > Security Skills and Knowledge > Tools for Incident Response and Discovery > head",
+        "subjects": [],
+        "_id": "6814b5bf0d8403989c02b0ea",
+        "guides": [
+            "What is the Linux head command?"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "Dfz-6aug0juUpMmOJLCJ9",
+        "text": "Cyber Security > Security Skills and Knowledge > Tools for Incident Response and Discovery > grep",
+        "subjects": [],
+        "_id": "6814b5c10d8403989c02b0f1",
+        "guides": [
+            "What is the Linux grep command?"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "OUarb1oS1-PX_3OXNR0rV",
+        "text": "Cyber Security > Security Skills and Knowledge > Tools for Incident Response and Discovery > nslookup",
+        "subjects": [],
+        "_id": "6814b5c40d8403989c02b0f8",
+        "guides": [
+            "What is nslookup?"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "jJtS0mgCYc0wbjuXssDRO",
+        "text": "Cyber Security > Security Skills and Knowledge > Tools for Incident Response and Discovery > tracert",
+        "subjects": [],
+        "_id": "6814b5c60d8403989c02b0ff",
+        "guides": [
+            "What is tracert?"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "gNan93Mg9Ym2AF3Q2gqoi",
+        "text": "Cyber Security > Security Skills and Knowledge > Tools for Incident Response and Discovery > winhex",
+        "subjects": [],
+        "_id": "6814b5c90d8403989c02b106",
+        "guides": [
+            "What is winhex?"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "bIwpjIoxSUZloxDuQNpMu",
+        "text": "Cyber Security > Security Skills and Knowledge > Tools for Incident Response and Discovery > autopsy",
+        "subjects": [],
+        "_id": "6814b5cb0d8403989c02b10d",
+        "guides": [
+            "Understanding autopsy forensic platform"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "IXNGFF4sOFbQ_aND-ELK0",
+        "text": "Cyber Security > Security Skills and Knowledge > Tools for Incident Response and Discovery > ipconfig",
+        "subjects": [],
+        "_id": "6814b5cf0d8403989c02b114",
+        "guides": [
+            "What is ipconfig?"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "W7iQUCjODGYgE4PjC5TZI",
+        "text": "Cyber Security > Security Skills and Knowledge > Tools for Incident Response and Discovery > curl",
+        "subjects": [],
+        "_id": "6814b5d10d8403989c02b11b"
+    },
+    {
+        "nodeId": "Sm9bxKUElINHND8FdZ5f2",
+        "text": "Cyber Security > Security Skills and Knowledge > Tools for Incident Response and Discovery > wireshark",
+        "subjects": [],
+        "_id": "6814b5d50d8403989c02b122",
+        "guides": [
+            "What is the Linux curl command? "
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "wspNQPmqWRjKoFm6x_bVw",
+        "text": "Cyber Security > Security Skills and Knowledge > Tools for Incident Response and Discovery > memdump",
+        "subjects": [],
+        "_id": "6814b5d90d8403989c02b129",
+        "guides": [
+            "What is memdump?"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "_jJhL1RtaqHJmlcWrd-Ak",
+        "text": "Cyber Security > Security Skills and Knowledge > Tools for Incident Response and Discovery > FTK Imager",
+        "subjects": [],
+        "_id": "6814b5dd0d8403989c02b130",
+        "guides": [
+            "What is FTK Imager?"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "oRssaVG-K-JwlL6TAHhXw",
+        "text": "Cyber Security > Security Skills and Knowledge > Understand Common Standards > ISO",
+        "subjects": [],
+        "_id": "6814b5e00d8403989c02b137",
+        "guides": [
+            "What is ISO?"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "fjEdufrZAfW4Rl6yDU8Hk",
+        "text": "Cyber Security > Security Skills and Knowledge > Understand Common Standards > RMF",
+        "subjects": [],
+        "_id": "6814b5e40d8403989c02b13e",
+        "guides": [
+            "What is RMF?"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "SOkJUTd1NUKSwYMIprv4m",
+        "text": "Cyber Security > Security Skills and Knowledge > Understand Common Standards > NIST",
+        "subjects": [],
+        "_id": "6814b5e90d8403989c02b145",
+        "guides": [
+            "What is NIST?"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "HjfgaSEZjW9BOXy_Ixzkk",
+        "text": "Cyber Security > Security Skills and Knowledge > Understand Common Standards > CIS > CSF",
+        "subjects": [],
+        "_id": "6814b5ed0d8403989c02b14c",
+        "guides": [
+            "What is a Cybersecurity Framework (CSF)?"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "sSihnptkoEqUsHjDpckhG",
+        "text": "Cyber Security > Security Skills and Knowledge > Understand Common Standards > CIS",
+        "subjects": [],
+        "_id": "6814b5ef0d8403989c02b153",
+        "guides": [
+            "What is the Center for Internet Security (CIS)?"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "zR6djXnfTSFVEfvJonQjf",
+        "text": "Cyber Security > Security Skills and Knowledge > Common Distros for hacking > ParrotOS",
+        "subjects": [
+            "Introduction to ParrotOS"
+        ],
+        "_id": "6814b5f20d8403989c02b15a",
+        "isOptional": false,
+        "guides": [
+            "What is ParrotOS?"
+        ]
+    },
+    {
+        "nodeId": "w6wXkoLrv0_d-Ah0txUHd",
+        "text": "Cyber Security > Security Skills and Knowledge > Common Distros for hacking > Kali Linux",
+        "subjects": [
+            "Introduction to Kali Linux"
+        ],
+        "_id": "6814b5f60d8403989c02b161",
+        "isOptional": false,
+        "guides": [
+            "What is Kali Linux?"
+        ]
+    },
+    {
+        "nodeId": "10qbxX8DCrfyH7tgYexxQ",
+        "text": "Cyber Security > Security Skills and Knowledge > Using tools for Unintended Purposes > LOLBAS",
+        "subjects": [],
+        "_id": "6814b5f90d8403989c02b168",
+        "guides": [
+            "What is LOLBAS (Living Off the Land Binaries and Scripts)?"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "Jd9t8e9r29dHRsN40dDOk",
+        "text": "Cyber Security > Security Skills and Knowledge > Using tools for Unintended Purposes > GTFOBINS",
+        "subjects": [],
+        "_id": "6814b5fe0d8403989c02b16f",
+        "guides": [
+            "What is GTFOBINS?"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "Rnpx7VkhrBkSQTni6UuTR",
+        "text": "Cyber Security > Security Skills and Knowledge > Using tools for Unintended Purposes > WADCOMS",
+        "subjects": [],
+        "_id": "6814b6020d8403989c02b176",
+        "guides": [
+            "What is WADCOMS?"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "c2kY3wZVFKZYxMARhLIwO",
+        "text": "Cyber Security > Security Skills and Knowledge > Understand the following > SIEM",
+        "subjects": [],
+        "_id": "6814b6050d8403989c02b17d",
+        "guides": [
+            "What is SIEM?"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "i0ulrA-GJrNhIVmzdWDrn",
+        "text": "Cyber Security > Security Skills and Knowledge > Understand the following > SOAR",
+        "subjects": [],
+        "_id": "6814b6080d8403989c02b184",
+        "guides": [
+            "What is SOAR?"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "KbFwL--xF-eYjGy8PZdrM",
+        "text": "Cyber Security > Security Skills and Knowledge > Learn how to find and use these logs > Event Logs",
+        "subjects": [],
+        "_id": "6814b60e0d8403989c02b18b",
+        "guides": [
+            "Understanding event logs"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "7oFwRkmoZom8exMDtMslX",
+        "text": "Cyber Security > Security Skills and Knowledge > Learn how to find and use these logs > syslogs",
+        "subjects": [],
+        "_id": "6814b6120d8403989c02b192",
+        "guides": [
+            "What is the Syslog protocol?"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "xXz-SwvXA2cLfdCd-hLtW",
+        "text": "Cyber Security > Security Skills and Knowledge > Learn how to find and use these logs > netflow",
+        "subjects": [],
+        "_id": "6814b6170d8403989c02b199",
+        "guides": [
+            "What is the netflow protocol?"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "TIxEkfBrN6EXQ3IKP1B7u",
+        "text": "Cyber Security > Security Skills and Knowledge > Learn how to find and use these logs > Packet Captures",
+        "subjects": [],
+        "_id": "6814b61b0d8403989c02b1a0",
+        "guides": [
+            "Introduction to Packet Captures"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "np0PwKy-EvIa_f_LC6Eem",
+        "text": "Cyber Security > Security Skills and Knowledge > Learn how to find and use these logs > Firewall Logs",
+        "subjects": [],
+        "_id": "6814b6200d8403989c02b1a7",
+        "guides": [
+            "What is a firewall log?"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "9Z6HPHPj4escSVDWftFEx",
+        "text": "Cyber Security > Security Skills and Knowledge > Secure vs Unsecure Protocols > FTP vs SFTP",
+        "subjects": [],
+        "_id": "6814b6280d8403989c02b1ae",
+        "guides": [
+            " FTP vs SFTP"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "6ILPXeUDDmmYRiA_gNTSr",
+        "text": "Cyber Security > Security Skills and Knowledge > Secure vs Unsecure Protocols > SSL vs TLS",
+        "subjects": [],
+        "_id": "6814b6330d8403989c02b1b5",
+        "guides": [
+            "SSL vs TLS"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "gNFVtBxSYP5Uw3o3tlJ0M",
+        "text": "Cyber Security > Security Skills and Knowledge > Secure vs Unsecure Protocols > IPSEC",
+        "subjects": [],
+        "_id": "6814b6370d8403989c02b1bc",
+        "guides": [
+            "What is IPSEC?"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "LLGXONul7JfZGUahnK0AZ",
+        "text": "Cyber Security > Security Skills and Knowledge > Secure vs Unsecure Protocols > DNSSEC",
+        "subjects": [],
+        "_id": "6814b63b0d8403989c02b1c3",
+        "guides": [
+            "Understanding  DNS Security Extensions (DNSSEC)"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "z_fDvTgKw51Uepo6eMQd9",
+        "text": "Cyber Security > Security Skills and Knowledge > Secure vs Unsecure Protocols > LDAPS",
+        "subjects": [],
+        "_id": "6814b6400d8403989c02b1ca",
+        "guides": [
+            "Understanding LDAPS"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "_9lQSG6fn69Yd9rs1pQdL",
+        "text": "Cyber Security > Security Skills and Knowledge > Secure vs Unsecure Protocols > SRTP",
+        "subjects": [],
+        "_id": "6814b6430d8403989c02b1d1",
+        "guides": [
+            "Understanding SRTP"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "9rmDvycXFcsGOq3v-_ziD",
+        "text": "Cyber Security > Security Skills and Knowledge > Secure vs Unsecure Protocols > S/MIME",
+        "subjects": [],
+        "_id": "6814b6470d8403989c02b1d8",
+        "guides": [
+            "Understanding S/MIME"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "IF5H0ZJ72XnqXti3jRWYF",
+        "text": "Cyber Security > Security Skills and Knowledge > Common Attacks > DoS vs DDoS",
+        "subjects": [],
+        "_id": "6814b64b0d8403989c02b1df",
+        "guides": [
+            "DoS vs DDoS"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "ODlVT6MhV-RVUbRMG0mHi",
+        "text": "Cyber Security > Security Skills and Knowledge > Common Attacks > MITM",
+        "subjects": [],
+        "_id": "6814b6500d8403989c02b1e6",
+        "guides": [
+            "Understanding MITM"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "pK2iRArULlK-B3iSVo4-n",
+        "text": "Cyber Security > Security Skills and Knowledge > Common Attacks > CSRF",
+        "subjects": [],
+        "_id": "6814b6520d8403989c02b1ed",
+        "guides": [
+            "Understanding CSRF"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "LteSouUtAj3JWWOzcjQPl",
+        "text": "Cyber Security > Security Skills and Knowledge > Common Attacks > Spoofing",
+        "subjects": [],
+        "_id": "6814b6560d8403989c02b1f4",
+        "guides": [
+            "What is spoofing?"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "P-Am25WJV8cFd_KsX7cdj",
+        "text": "Cyber Security > Security Skills and Knowledge > Common Attacks > SQL Injection",
+        "subjects": [],
+        "_id": "6814b65a0d8403989c02b1fb",
+        "guides": [
+            "What is a SQL injection?"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "2jo1r9O_rCnDwRv1_4Wo-",
+        "text": "Cyber Security > Security Skills and Knowledge > Common Attacks > XSS",
+        "subjects": [],
+        "_id": "6814b65f0d8403989c02b202",
+        "guides": [
+            "What is Cross-Site Scripting (XSS)?"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "O1fY2n40yjZtJUEeoItKr",
+        "text": "Cyber Security > Security Skills and Knowledge > Common Attacks > Evil Twin",
+        "subjects": [],
+        "_id": "6814b6630d8403989c02b209",
+        "guides": [
+            "What is an evil twin?"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "u4hySof6if5hiONSaW-Uf",
+        "text": "Cyber Security > Security Skills and Knowledge > Common Attacks > VLAN Hopping",
+        "subjects": [],
+        "_id": "6814b6680d8403989c02b210",
+        "guides": [
+            "What is a VLAN hopping?"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "urtsyYWViEzbqYLoNfQAh",
+        "text": "Cyber Security > Security Skills and Knowledge > Common Attacks > DNS Poisoning",
+        "subjects": [],
+        "_id": "6814b66c0d8403989c02b217",
+        "guides": [
+            "What is DNS Poisoning?"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "LfWJJaT3fv0p6fUeS8b84",
+        "text": "Cyber Security > Security Skills and Knowledge > Common Attacks > Deauth Attack",
+        "subjects": [],
+        "_id": "6814b6740d8403989c02b21e",
+        "guides": [
+            "Understanding Deauthentication Attacks"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "mIX8PsIGuwgPCGQZ6ok2H",
+        "text": "Cyber Security > Security Skills and Knowledge > Common Attacks > Replay Attack",
+        "subjects": [],
+        "_id": "6814b7bf0d8403989c02b225",
+        "guides": [
+            "What is a replay attack?"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "Ee7LfbhwJbiWjJ3b_bbni",
+        "text": "Cyber Security > Security Skills and Knowledge > Common Attacks > Rogue Access Point",
+        "subjects": [],
+        "_id": "6814b7c50d8403989c02b22c",
+        "guides": [
+            "What is a rogue access point?"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "n8ZOZxNhlnw7DpzoXe_f_",
+        "text": "Cyber Security > Security Skills and Knowledge > Common Attacks > Buffer Overflow",
+        "subjects": [],
+        "_id": "6814b7cb0d8403989c02b233",
+        "guides": [
+            "What is a buffer overflow?"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "nOND14t7ISgSH3zNpV3F8",
+        "text": "Cyber Security > Security Skills and Knowledge > Common Attacks > Memory Leak",
+        "subjects": [],
+        "_id": "6814b7cf0d8403989c02b23a",
+        "guides": [
+            "What is a memory leak?"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "sMuKqf27y4iG0GrCdF5DN",
+        "text": "Cyber Security > Security Skills and Knowledge > Common Attacks > Pass the Hash",
+        "subjects": [],
+        "_id": "6814b7d40d8403989c02b241",
+        "guides": [
+            "What is a pass the hash attack? "
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "L0ROYh2DNlkybNDO2ezJY",
+        "text": "Cyber Security > Security Skills and Knowledge > Common Attacks > Directory Traversal",
+        "subjects": [],
+        "_id": "6814b7d90d8403989c02b248",
+        "guides": [
+            "What is directory traversal attack?"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "3140n5prZYySsuBHjqGOJ",
+        "text": "Cyber Security > Security Skills and Knowledge > Understand the following Terms > Antivirus",
+        "subjects": [],
+        "_id": "6814b7de0d8403989c02b24f",
+        "guides": [
+            "What is an antivirus?"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "9QtY1hMJ7NKLFztYK-mHY",
+        "text": "Cyber Security > Security Skills and Knowledge > Understand the following Terms > Antimalware",
+        "subjects": [],
+        "_id": "6814b7e40d8403989c02b256",
+        "guides": [
+            "What is an antimalware?"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "QvHWrmMzO8IvNQ234E_wf",
+        "text": "Cyber Security > Security Skills and Knowledge > Understand the following Terms > EDR",
+        "subjects": [],
+        "_id": "6814b7e80d8403989c02b25d"
+    },
+    {
+        "nodeId": "iolsTC-63d_1wzKGul-cT",
+        "text": "Cyber Security > Security Skills and Knowledge > Understand the following Terms > DLP",
+        "subjects": [],
+        "_id": "6814b7ed0d8403989c02b264",
+        "guides": [
+            "Understanding Endpoint Detection and Response (EDR)"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "tWDo5R3KU5KOjDdtv801x",
+        "text": "Cyber Security > Security Skills and Knowledge > Understand the following Terms > Firewall & Nextgen Firewall",
+        "subjects": [],
+        "_id": "6814b7f10d8403989c02b26b",
+        "guides": [
+            "Understanding Firewall & Nextgen Firewall"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "l5EnhOCnkN-RKvgrS9ylH",
+        "text": "Cyber Security > Security Skills and Knowledge > Understand the following Terms > HIPS",
+        "subjects": [],
+        "_id": "6814b7f60d8403989c02b272",
+        "guides": [
+            "What is a Host Intrusion Prevention System (HIPS)?"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "LIPtxl_oKZRcbvXT4EdNf",
+        "text": "Cyber Security > Security Skills and Knowledge > Understand the following Terms > NIDS",
+        "subjects": [],
+        "_id": "6814b7fa0d8403989c02b279",
+        "guides": [
+            "What is a Network Intrusion Detection System (NIDS)?"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "7w9qj16OD4pUzq-ItdxeK",
+        "text": "Cyber Security > Security Skills and Knowledge > Understand the following Terms > NIPS",
+        "subjects": [],
+        "_id": "6814b7ff0d8403989c02b285",
+        "guides": [
+            "What is a Network Intrusion Prevention System (NIPS)?"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "jWl1VWkZn3n1G2eHq6EnX",
+        "text": "Cyber Security > Security Skills and Knowledge > Understand the following Terms > Host Based Firewall",
+        "subjects": [],
+        "_id": "6814b8040d8403989c02b28c",
+        "guides": [
+            "What is a host based firewall?"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "SLKwuLHHpC7D1FqrpPRAe",
+        "text": "Cyber Security > Security Skills and Knowledge > Understand the following Terms > Sandboxing",
+        "subjects": [],
+        "_id": "6814b8080d8403989c02b293",
+        "guides": [
+            "What is sandboxing in cybersecurity?"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "1jwtExZzR9ABKvD_S9zFG",
+        "text": "Cyber Security > Security Skills and Knowledge > Understand the following Terms > EAP vs PEAP",
+        "subjects": [],
+        "_id": "6814b80d0d8403989c02b29a",
+        "guides": [
+            "EAP vs PEAP"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "HSCGbM2-aTnJWUX6jGaDP",
+        "text": "Cyber Security > Security Skills and Knowledge > Understand the following Terms > WPS",
+        "subjects": [],
+        "_id": "6814b8110d8403989c02b2a1",
+        "guides": [
+            "What is Wi-Fi Protected Setup (WPS)?"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "35oCRzhzpVfitQPL4K9KC",
+        "text": "Cyber Security > Security Skills and Knowledge > Understand the following Terms > ACL",
+        "subjects": [],
+        "_id": "6814b8150d8403989c02b2a8",
+        "guides": [
+            "What is an Access Control List (ACL)?"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "MBnDE0VyVh2u2p-r90jVk",
+        "text": "Cyber Security > Security Skills and Knowledge > Understand the following Terms > WPA vs WPA2 vs WPA3 vs WEP",
+        "subjects": [],
+        "_id": "6814b81a0d8403989c02b2b4",
+        "guides": [
+            "WPA vs WPA2 vs WPA3 vs WEP"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "w6V4JOtXKCMPAkKIQxvMg",
+        "text": "Cyber Security > Security Skills and Knowledge > Understand the Incident Response Process > Preparation",
+        "subjects": [],
+        "_id": "6814b81f0d8403989c02b2bb"
+    },
+    {
+        "nodeId": "XsRoldaBXUSiGbvY1TjQd",
+        "text": "Cyber Security > Security Skills and Knowledge > Understand the Incident Response Process > Identification",
+        "subjects": [],
+        "_id": "6814b82e0d8403989c02b2c9"
+    },
+    {
+        "nodeId": "l7WnKuR2HTD4Vf9U2TxkK",
+        "text": "Cyber Security > Security Skills and Knowledge > Understand the Incident Response Process > Containment",
+        "subjects": [],
+        "_id": "6814b8330d8403989c02b2d0"
+    },
+    {
+        "nodeId": "N17xAIo7sgbB0nrIDMWju",
+        "text": "Cyber Security > Security Skills and Knowledge > Understand the Incident Response Process > Eradication",
+        "subjects": [],
+        "_id": "6814b8380d8403989c02b2d7"
+    },
+    {
+        "nodeId": "vFjbZAJq8OfLb3_tsc7oT",
+        "text": "Cyber Security > Security Skills and Knowledge > Understand the Incident Response Process > Recovery",
+        "subjects": [],
+        "_id": "6814b8430d8403989c02b2de"
+    },
+    {
+        "nodeId": "ErRol7AT02HTn3umsPD_0",
+        "text": "Cyber Security > Security Skills and Knowledge > Understand the Incident Response Process > Lessons Learned",
+        "subjects": [],
+        "_id": "6814b8470d8403989c02b2e5"
+    },
+    {
+        "nodeId": "zqRaMmqcLfx400kJ-h0LO",
+        "text": "Cyber Security > Security Skills and Knowledge > Understand Threat Classification > Zero Day",
+        "subjects": [],
+        "_id": "6814b84f0d8403989c02b2ec",
+        "guides": [
+            "What is a zero-day vulnerability?"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "HPlPGKs7NLqmBidHJkOZg",
+        "text": "Cyber Security > Security Skills and Knowledge > Understand Threat Classification > Known vs Unknown",
+        "subjects": [],
+        "_id": "6814b8540d8403989c02b2f3",
+        "guides": [
+            "Known vs Unknown threats in cybersecurity"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "l0BvDtwWoRSEjm6O0WDPy",
+        "text": "Cyber Security > Security Skills and Knowledge > Understand Threat Classification > APT",
+        "subjects": [],
+        "_id": "6814b8580d8403989c02b2fa",
+        "guides": [
+            "Understanding Advanced Persistent Threats "
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "OAukNfV5T0KTnIF9jKYRF",
+        "text": "Cyber Security > Security Skills and Knowledge > Understand Hardening Concepts > MAC-based",
+        "subjects": [],
+        "_id": "6814b85c0d8403989c02b301",
+        "guides": [
+            "What is Mandatory Access Control (MAC)?"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "6oAzYfwsHQYNVbi7c2Tly",
+        "text": "Cyber Security > Security Skills and Knowledge > Understand Hardening Concepts > NAC-based",
+        "subjects": [],
+        "_id": "6814b8600d8403989c02b308",
+        "guides": [
+            "What is Network Access Control (NAC)?"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "W7bcydXdwlubXF2PHKOuq",
+        "text": "Cyber Security > Security Skills and Knowledge > Understand Hardening Concepts > Port Blocking",
+        "subjects": [],
+        "_id": "6814b8650d8403989c02b311",
+        "guides": [
+            "What is port blocking?"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "FxuMJmDoDkIsPFp2iocFg",
+        "text": "Cyber Security > Security Skills and Knowledge > Understand Hardening Concepts > Group Policy",
+        "subjects": [],
+        "_id": "6814b8690d8403989c02b318",
+        "guides": [
+            "What is the Windows Group Policy?"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "oFgyQYL3Ws-l7B5AF-bTR",
+        "text": "Cyber Security > Security Skills and Knowledge > Understand Hardening Concepts > Sinkholes",
+        "subjects": [],
+        "_id": "6814b86d0d8403989c02b31f",
+        "guides": [
+            "What is a sinkhole in cybersecurity?"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "8JM95sonFUhZCdaynUA_M",
+        "text": "Cyber Security > Security Skills and Knowledge > Understand Hardening Concepts > ACLs",
+        "subjects": [],
+        "_id": "6814b8720d8403989c02b326",
+        "guides": [
+            "What is an Access Control List (ACL)?"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "e-MDyUR3GEv-e4Qsx_5vV",
+        "text": "Cyber Security > Security Skills and Knowledge > Understand Hardening Concepts > Patching",
+        "subjects": [],
+        "_id": "6814b8760d8403989c02b32d"
+    },
+    {
+        "nodeId": "UF3BV1sEEOrqh5ilnfM1B",
+        "text": "Cyber Security > Security Skills and Knowledge > Understand Hardening Concepts > Jump Server",
+        "subjects": [],
+        "_id": "6814b87b0d8403989c02b334",
+        "guides": [
+            "What is Patch Management?"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "LEgJtu1GZKOtoAXyOGWLE",
+        "text": "Cyber Security > Security Skills and Knowledge > Understand Hardening Concepts > Endpoint Security",
+        "subjects": [],
+        "_id": "6814b8800d8403989c02b33b",
+        "guides": [
+            "What is Endpoint Security?"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "rxzcAzHjzIc9lkWSw0fef",
+        "text": "Cyber Security > Security Skills and Knowledge > Understand Common Tools > VirusTotal",
+        "subjects": [],
+        "_id": "6814b8830d8403989c02b342",
+        "guides": [
+            "How VirusTotal Works"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "lMiW2q-b72KUl-2S7M6Vb",
+        "text": "Cyber Security > Security Skills and Knowledge > Understand Common Tools > urlscan",
+        "subjects": [],
+        "_id": "6814b8880d8403989c02b349",
+        "guides": [
+            "What is urlscan.io?"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "GZHFR43UzN0WIIxGKZOdX",
+        "text": "Cyber Security > Security Skills and Knowledge > Understand Common Tools > any.run",
+        "subjects": [],
+        "_id": "6814b88d0d8403989c02b350",
+        "guides": [
+            "What is Any.run?"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "h__KxKa0Q74_egY7GOe-L",
+        "text": "Cyber Security > Security Skills and Knowledge > Understand Common Tools > Joe Sandbox",
+        "subjects": [],
+        "_id": "6814b8920d8403989c02b357",
+        "guides": [
+            "What is Joe Sandbox?"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "lFt1k1Q-NlWWqyDA3gWD1",
+        "text": "Cyber Security > Security Skills and Knowledge > Understand Common Tools > urlvoid",
+        "subjects": [],
+        "_id": "6814b8970d8403989c02b35e",
+        "guides": [
+            "Introduction to urlvoid"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "-RnlvUltJ9IDtH0HEnMbN",
+        "text": "Cyber Security > Security Skills and Knowledge > Understand Common Tools > WHOIS",
+        "subjects": [],
+        "_id": "6814b89c0d8403989c02b365",
+        "guides": [
+            "What is WHOIS?"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "lv6fI3WeJawuCbwKtMRIh",
+        "text": "Cyber Security > Security Skills and Knowledge > Understand Audience > Stakeholders",
+        "subjects": [],
+        "_id": "6814b8a10d8403989c02b36f"
+    },
+    {
+        "nodeId": "05tH6WhToC615JTFN-TPc",
+        "text": "Cyber Security > Security Skills and Knowledge > Understand Audience > HR",
+        "subjects": [],
+        "_id": "6814b8a50d8403989c02b376"
+    },
+    {
+        "nodeId": "C5bCIdPi0gGkY_r4qqoXZ",
+        "text": "Cyber Security > Security Skills and Knowledge > Understand Audience > Legal",
+        "subjects": [],
+        "_id": "6814b8a90d8403989c02b37d"
+    },
+    {
+        "nodeId": "05Gbgy6aawYlYIx38u8DE",
+        "text": "Cyber Security > Security Skills and Knowledge > Understand Audience > Compliance",
+        "subjects": [],
+        "_id": "6814b8af0d8403989c02b384"
+    },
+    {
+        "nodeId": "s9tHpzYRj2HCImwQhnjFM",
+        "text": "Cyber Security > Security Skills and Knowledge > Understand Audience > Management",
+        "subjects": [],
+        "_id": "6814b8b30d8403989c02b38b"
+    },
+    {
+        "nodeId": "vVaBQ5VtsE_ZeXbCOF8ux",
+        "text": "Cyber Security > Cloud Skills and Knowledge",
+        "subjects": [
+            "Cloud Computing Basics"
+        ],
+        "_id": "6814b8b80d8403989c02b392",
+        "isOptional": false,
+        "guides": [
+            "Introduction to cloud computing"
+        ]
+    },
+    {
+        "nodeId": "ThLsXkqLw--uddHz0spCH",
+        "text": "Cyber Security > Cloud Skills and Knowledge > Understand the Concept of Security in the Cloud",
+        "subjects": [],
+        "_id": "6814b8b90d8403989c02b399",
+        "guides": [
+            "What Is Cloud Security? "
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "KGjYM4Onr5GQf1Yv9IabI",
+        "text": "Cyber Security > Cloud Skills and Knowledge > Understand the differences between cloud and on-premises",
+        "subjects": [],
+        "_id": "6814b8b90d8403989c02b3a0",
+        "guides": [
+            "On Premise vs Cloud "
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "RJctUpvlUJGAdwBNtDSXw",
+        "text": "Cyber Security > Cloud Skills and Knowledge > Understand the concept of Infrastructure as Code",
+        "subjects": [],
+        "_id": "6814b8bb0d8403989c02b3a7",
+        "guides": [
+            "What is Infrastructure as Code?"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "-83ltMEl3le3yD68OFnTM",
+        "text": "Cyber Security > Cloud Skills and Knowledge > Understand the Concept of Serverless",
+        "subjects": [],
+        "_id": "6814b8bc0d8403989c02b3ae",
+        "guides": [
+            "What is Serverless Computing?"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "XL3FVeGFDhAl_gSol6Tjt",
+        "text": "Cyber Security > Cloud Skills and Knowledge > Understand the basics and general flow of deploying in the cloud",
+        "subjects": [],
+        "_id": "6814b8bd0d8403989c02b3b5",
+        "guides": [
+            "What is Cloud Deployment?",
+            "What is SaaS?"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "sVw5KVNxPEatBRKb2ZbS_",
+        "text": "Cyber Security > Cloud Skills and Knowledge > Understand Cloud Services > SaaS",
+        "subjects": [],
+        "_id": "6814b8c10d8403989c02b3bc"
+    },
+    {
+        "nodeId": "PQ_np6O-4PK2V-r5lywQg",
+        "text": "Cyber Security > Cloud Skills and Knowledge > Understand Cloud Services > PaaS",
+        "subjects": [],
+        "_id": "6814b8c20d8403989c02b3c3",
+        "guides": [
+            "What is PaaS?"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "1nPifNUm-udLChIqLC_uK",
+        "text": "Cyber Security > Cloud Skills and Knowledge > Understand Cloud Services > IaaS",
+        "subjects": [],
+        "_id": "6814b8c80d8403989c02b3ca",
+        "guides": [
+            "What is IaaS?"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "ecpMKP1cQXXsfKETDUrSf",
+        "text": "Cyber Security > Cloud Skills and Knowledge > Cloud Models > Private",
+        "subjects": [],
+        "_id": "6814b8ca0d8403989c02b3d1",
+        "guides": [
+            "What are private clouds?"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "ZDj7KBuyZsKyEMZViMoXW",
+        "text": "Cyber Security > Cloud Skills and Knowledge > Cloud Models > Public",
+        "subjects": [],
+        "_id": "6814b8cb0d8403989c02b3d8",
+        "guides": [
+            "What are public clouds?"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "ywRlTuTfh5-NHnv4ZyW1t",
+        "text": "Cyber Security > Cloud Skills and Knowledge > Cloud Models > Hybrid",
+        "subjects": [],
+        "_id": "6814b8cd0d8403989c02b3df",
+        "guides": [
+            "What are hybrid clouds?"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "0LztOTc3NG3OujCVwlcVU",
+        "text": "Cyber Security > Cloud Skills and Knowledge > Common Cloud Environments > AWS",
+        "subjects": [
+            "AWS Cloud Practitioner Essentials",
+            "Cloud Security on AWS"
+        ],
+        "_id": "6814b8d00d8403989c02b3e6",
+        "isOptional": false,
+        "guides": [
+            "What is AWS?"
+        ]
+    },
+    {
+        "nodeId": "tOLA5QPKi6LHl1ljsOMwX",
+        "text": "Cyber Security > Cloud Skills and Knowledge > Common Cloud Environments > GCP",
+        "subjects": [
+            "Google Cloud Fundamentals",
+            "Cloud Security on Google Cloud"
+        ],
+        "_id": "6814b8d20d8403989c02b3ed",
+        "isOptional": false,
+        "guides": [
+            "What is GCP?"
+        ]
+    },
+    {
+        "nodeId": "GklBi7Qx1akN_cS9UMrha",
+        "text": "Cyber Security > Cloud Skills and Knowledge > Common Cloud Environments > Azure",
+        "subjects": [
+            "Microsoft Azure Fundamentals",
+            "Cloud Security on Azure"
+        ],
+        "_id": "6814b8d50d8403989c02b3f4",
+        "isOptional": false,
+        "guides": [
+            "What is Azure?"
+        ]
+    },
+    {
+        "nodeId": "2jsTgT7k8MeaDtx6RJhOP",
+        "text": "Cyber Security > Cloud Skills and Knowledge > Common Cloud Storage > S3",
+        "subjects": [
+            "Amazon S3 Basics"
+        ],
+        "_id": "6814b8d70d8403989c02b3fb",
+        "isOptional": false,
+        "guides": [
+            "What is S3?"
+        ]
+    },
+    {
+        "nodeId": "9OastXVfiG1YRMm68ecnn",
+        "text": "Cyber Security > Cloud Skills and Knowledge > Common Cloud Storage > Dropbox",
+        "subjects": [
+            "Introduction to Dropbox"
+        ],
+        "_id": "6814b8d90d8403989c02b402",
+        "isOptional": false,
+        "guides": [
+            "What is Dropbox?"
+        ]
+    },
+    {
+        "nodeId": "Wqy6ki13hP5c0VhGYEhHj",
+        "text": "Cyber Security > Cloud Skills and Knowledge > Common Cloud Storage > iCloud",
+        "subjects": [
+            "Introduction to iCloud"
+        ],
+        "_id": "6814b8db0d8403989c02b409",
+        "isOptional": false,
+        "guides": [
+            "What is iCloud?"
+        ]
+    },
+    {
+        "nodeId": "4Man3Bd-ySLFlAdxbLOHw",
+        "text": "Cyber Security > Cloud Skills and Knowledge > Common Cloud Storage > Box",
+        "subjects": [
+            "Introduction to Box Storage"
+        ],
+        "_id": "6814b8e00d8403989c02b410",
+        "isOptional": false,
+        "guides": [
+            "What is Box Storage?"
+        ]
+    },
+    {
+        "nodeId": "MWqnhDKm9jXvDDjkeVNxm",
+        "text": "Cyber Security > Cloud Skills and Knowledge > Common Cloud Storage > OneDrive",
+        "subjects": [
+            "Introduction to OneDrive"
+        ],
+        "_id": "6814b8e20d8403989c02b417",
+        "isOptional": false,
+        "guides": [
+            "What is OneDrive?"
+        ]
+    },
+    {
+        "nodeId": "fTZ4PqH-AMhYA_65w4wFO",
+        "text": "Cyber Security > Cloud Skills and Knowledge > Common Cloud Storage > Google Drive",
+        "subjects": [
+            "Introduction to Google Drive"
+        ],
+        "_id": "6814b8e50d8403989c02b41e",
+        "isOptional": false,
+        "guides": [
+            "What is Google Drive?"
+        ]
+    },
+    {
+        "nodeId": "_RnuQ7952N8GWZfPD60sJ",
+        "text": "Cyber Security > Programming Skills",
+        "subjects": [],
+        "_id": "6814b8e50d8403989c02b425"
+    },
+    {
+        "nodeId": "XiHvGy--OkPFfJeKA6-LP",
+        "text": "Cyber Security > Programming Skills > Python",
+        "subjects": [],
+        "_id": "6814b8e70d8403989c02b42c",
+        "guides": [
+            "What is Python?"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "jehVvdz8BnruKjqHMKu5v",
+        "text": "Cyber Security > Programming Skills > Go",
+        "subjects": [],
+        "_id": "6814b8e80d8403989c02b433",
+        "guides": [
+            "What is Golang?"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "2SThr6mHpX6rpW-gmsqxG",
+        "text": "Cyber Security > Programming Skills > JavaScript",
+        "subjects": [],
+        "_id": "6814b8e90d8403989c02b43a",
+        "guides": [
+            "What is JavaScript?"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "8jj9hpe9jQIgCc8Txyw3O",
+        "text": "Cyber Security > Programming Skills > C++",
+        "subjects": [],
+        "_id": "6814b8ea0d8403989c02b441",
+        "guides": [
+            "What is C++?"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "tao0Bb_JR0Ubl62HO8plp",
+        "text": "Cyber Security > Programming Skills > Bash",
+        "subjects": [],
+        "_id": "6814b8eb0d8403989c02b448",
+        "guides": [
+            "What is Bash?"
+        ],
+        "isOptional": false
+    },
+    {
+        "nodeId": "paY9x2VJA98FNGBFGRXp2",
+        "text": "Cyber Security > Programming Skills > Power Shell",
+        "subjects": [],
+        "_id": "6814b8ec0d8403989c02b44f",
+        "guides": [
+            "What is Power Shell?"
+        ],
+        "isOptional": false
+    }
+]
