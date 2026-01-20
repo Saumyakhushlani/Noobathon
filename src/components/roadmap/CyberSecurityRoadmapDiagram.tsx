@@ -3,6 +3,7 @@
 import * as React from "react";
 
 import Modal from "@/components/ui/modal";
+import TextBlockAnimation from "@/components/text-block-animation";
 import type { RoadmapNodeContent } from "@/lib/roadmap";
 import { slugifyRoadmapName } from "@/lib/roadmap";
 
@@ -71,6 +72,10 @@ function Box({
   variant?: "soft" | "outline";
   className?: string;
 }) {
+  const base =
+    variant === "outline"
+      ? "bg-white hover:bg-gray-50"
+      : "bg-white hover:bg-gray-50";
   const Comp: any = onClick ? "button" : "div";
   return (
     <Comp
@@ -80,24 +85,17 @@ function Box({
         "inline-flex max-w-full items-center justify-center rounded-md border-2 px-4 py-2 text-sm font-semibold shadow-sm",
         "whitespace-normal break-words text-center",
         "transition-colors",
-        "cursor-pointer",
-        // themed fill (works for both leaf + category; category gets slightly stronger via variant)
-        "bg-[color-mix(in_oklab,var(--box-accent)_28%,white)]",
-        "hover:bg-[color-mix(in_oklab,var(--box-accent)_36%,white)]",
+        base,
         className ?? "",
       ].join(" ")}
       style={{
-        // use CSS variable so Tailwind can reference it in bg/hover
-        ["--box-accent" as any]: accent,
         borderColor: accent,
         color: "rgb(17 24 39)", // gray-900
-        // bump category boxes a bit more
-        ...(variant === "soft"
-          ? {}
-          : {
-              // leaf boxes slightly lighter by default
-              backgroundColor: `color-mix(in oklab, ${accent} 18%, white)`,
-            }),
+        backgroundColor:
+          variant === "soft"
+            ? // a subtle tint using the theme color
+              `color-mix(in oklab, ${accent} 12%, white)`
+            : "white",
       }}
     >
       {label}
@@ -172,13 +170,19 @@ function TreeSection({
               variant="soft"
             />
           </div>
-          <div className="mt-2 block pl-6 text-xs text-gray-500">
-            {children.length} subtopics
-          </div>
         </summary>
 
         <div className="mt-5 flex flex-wrap gap-3">
-          {children.map((c) => (
+          {children
+            .slice()
+            // Put leaf nodes first, then nodes that have their own children (like "Connection Types...")
+            .sort((a, b) => {
+              const aGroup = a.children.size > 0 ? 1 : 0;
+              const bGroup = b.children.size > 0 ? 1 : 0;
+              if (aGroup !== bGroup) return aGroup - bGroup;
+              return a.label.localeCompare(b.label);
+            })
+            .map((c) => (
             <TreeSection
               key={`${c.label}-${c.nodeId ?? "x"}`}
               node={c}
@@ -186,6 +190,10 @@ function TreeSection({
               onOpen={onOpen}
             />
           ))}
+        </div>
+
+        <div className="mt-3 block pl-6 text-xs text-gray-500">
+          {children.length} subtopics
         </div>
       </details>
     </div>
@@ -231,21 +239,42 @@ export default function CyberSecurityRoadmapDiagram() {
 
   return (
     <section className="mx-auto w-full max-w-7xl px-4 md:px-8 lg:px-10 pb-20">
-      <div className="flex items-end justify-between gap-4 flex-wrap">
-        <div>
-          <h2 className="text-2xl md:text-3xl font-extrabold tracking-tight text-gray-900">
+      <div className="mb-8">
+        <h2 className="text-2xl md:text-3xl font-extrabold tracking-tight text-gray-900">
+          <TextBlockAnimation
+            blockColor="var(--brand-purple)"
+            animateOnScroll={false}
+            delay={0.1}
+            duration={0.8}
+          >
             Cyber Security Roadmap (Full)
-          </h2>
-          <p className="mt-2 text-sm text-gray-600 max-w-2xl">
-            Full dataset from your `cyber-security.json`. Click any node to open details in a modal.
-          </p>
-        </div>
-        <div className="text-xs font-semibold text-gray-500">
-          Theme:{" "}
-          <span className="text-[var(--brand-blue)]">blue</span> ·{" "}
-          <span className="text-[var(--brand-pink)]">pink</span> ·{" "}
-          <span className="text-[var(--brand-purple)]">purple</span>
-        </div>
+          </TextBlockAnimation>
+        </h2>
+
+        <p className="mt-3 text-sm md:text-base text-gray-700 max-w-3xl">
+          <TextBlockAnimation
+            blockColor="var(--brand-pink)"
+            animateOnScroll={false}
+            delay={0.2}
+            duration={0.7}
+          >
+            Full dataset from your <span className="font-mono">cyber-security.json</span>. Click any node to open
+            details in a modal.
+          </TextBlockAnimation>
+        </p>
+
+        <p className="mt-3 text-sm text-gray-600 max-w-3xl">
+          <TextBlockAnimation
+            blockColor="var(--brand-blue)"
+            animateOnScroll={false}
+            delay={0.25}
+            duration={0.7}
+          >
+            This view shows every category and subcategory as a clickable box. When you click a box, the app fetches
+            the live guide content (description + resources) from roadmap.sh using the <span className="font-mono">name@id</span>{" "}
+            format and displays it instantly.
+          </TextBlockAnimation>
+        </p>
       </div>
 
       <div className="mt-6 space-y-6">
