@@ -1,18 +1,23 @@
 "use client";
 
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { Moon, Sun } from "lucide-react";
 import * as React from "react";
 
 import { initThemeFromStorage, useThemeStore } from "@/store/theme";
 
 export default function ThemeNavbar() {
+  const pathname = usePathname();
   const theme = useThemeStore((s) => s.theme);
   const toggleTheme = useThemeStore((s) => s.toggleTheme);
 
   React.useEffect(() => {
     initThemeFromStorage();
   }, []);
+
+  // Hide header on auth pages
+  if (pathname === "/sign-in" || pathname === "/sign-up") return null;
 
   return (
     <header className="sticky top-0 z-50 border-b border-black/10 dark:border-white/10 bg-white/80 dark:bg-black/80 backdrop-blur">
