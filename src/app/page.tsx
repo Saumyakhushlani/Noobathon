@@ -1,5 +1,11 @@
-import Gallery from "@/components/gallery/Gallery";
+import LaserFlowLanding from "@/components/landing/LaserFlowLanding";
+import LandingFeatures from "@/components/landing/LandingFeatures";
 
 export default function Home() {
-  return <Gallery />;
+  return (
+    <>
+      <LaserFlowLanding />
+      <LandingFeatures />
+    </>
+  );
 }
