@@ -1,13 +1,9 @@
-"use server";
-
 import { NextResponse } from "next/server";
 import { auth, currentUser } from "@clerk/nextjs/server";
 
 import { prisma } from "@/lib/prisma";
 
 export async function GET() {
-  // For now: authenticated users only (secure-by-default).
-  // If you want public reading later, we can relax this.
   const { userId } = await auth();
   if (!userId) {
     return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
@@ -30,19 +26,20 @@ export async function GET() {
   return NextResponse.json({ posts });
 }
 
-export async function POST(req: Request) {
+export async function POST(req) {
   const { userId } = await auth();
   if (!userId) {
     return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
   }
 
-  const body = (await req.json().catch(() => null)) as
-    | { title?: unknown; content?: unknown; imageUrl?: unknown }
-    | null;
+  const body = await req.json().catch(() => null);
 
   if (!body || typeof body.title !== "string" || typeof body.content !== "string") {
     return NextResponse.json(
-      { error: "Invalid body. Expected { title: string, content: string, imageUrl?: string }" },
+      {
+        error:
+          "Invalid body. Expected { title: string, content: string, imageUrl?: string }",
+      },
       { status: 400 }
     );
   }
@@ -52,7 +49,10 @@ export async function POST(req: Request) {
   const imageUrl = typeof body.imageUrl === "string" ? body.imageUrl.trim() : null;
 
   if (!title || !content) {
-    return NextResponse.json({ error: "Title and content are required." }, { status: 400 });
+    return NextResponse.json(
+      { error: "Title and content are required." },
+      { status: 400 }
+    );
   }
 
   const u = await currentUser();

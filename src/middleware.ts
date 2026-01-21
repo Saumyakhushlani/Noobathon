@@ -14,6 +14,13 @@ const isPublicRoute = createRouteMatcher([
 ]);
 
 export default clerkMiddleware(async (auth, req) => {
+  // Keep /blog public, but protect the create page.
+  if (req.nextUrl.pathname.startsWith("/blog/create")) {
+    const { userId, redirectToSignIn } = await auth();
+    if (!userId) return redirectToSignIn({ returnBackUrl: req.url });
+    return;
+  }
+
   if (isPublicRoute(req)) return;
   const { userId, redirectToSignIn } = await auth();
   if (!userId) {
