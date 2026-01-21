@@ -49,6 +49,8 @@
   --color-d-fg: var(--d-fg);
   --color-d-muted: var(--d-muted);
   --color-d-bg: var(--d-bg);
+  --color-brand: var(--brand);
+  --color-highlight: var(--highlight);
 }
 
 :root {
@@ -92,6 +94,8 @@
   --d-fg: hsl(0 0% 0%);
   --d-border: hsl(0 0% 90%);
   --d-sheet: hsl(0 0% 98%);
+  --highlight: oklch(0.852 0.199 91.936);
+  --brand: oklch(0.623 0.214 259.815);
 }
 
 @layer base {
@@ -109,4 +113,6 @@
   --d-fg: hsl(0 0% 100%);
   --d-border: hsl(0 0% 20%);
   --d-sheet: hsl(0 0% 12%);
+  --highlight: oklch(0.852 0.199 91.936);
+  --brand: oklch(0.707 0.165 254.624);
 }
