@@ -7,6 +7,7 @@ import { motion } from "motion/react";
 import Link from "next/link";
 import React, { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { twMerge } from "tailwind-merge";
+import { useThemeStore } from "@/store/theme";
 
 export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
@@ -1080,7 +1081,7 @@ export const siteConfig = {
     badge: "Introducing custom automations",
     title: "Meet your AI Agent Streamline your workflow",
     description:
-      "AI assistant designed to streamline your digital workflows and handle mundane tasks, so you can focus on what truly matters",
+      "Your comprehensive cybersecurity learning platform. Master security skills, stay updated with the latest threats, and protect yourself in the digital world.",
     cta: {
       primary: {
         text: "Try for Free",
@@ -1094,30 +1095,21 @@ export const siteConfig = {
   },
   footerLinks: [
     {
-      title: "Company",
+      title: "Learn",
       links: [
-        { id: 1, title: "About", url: "#" },
-        { id: 2, title: "Contact", url: "#" },
-        { id: 3, title: "Blog", url: "#" },
-        { id: 4, title: "Story", url: "#" },
-      ],
-    },
-    {
-      title: "Products",
-      links: [
-        { id: 5, title: "Company", url: "#" },
-        { id: 6, title: "Product", url: "#" },
-        { id: 7, title: "Press", url: "#" },
-        { id: 8, title: "More", url: "#" },
+        { id: 1, title: "Roadmap", url: "/roadmap" },
+        { id: 2, title: "Blog", url: "/blog" },
+        { id: 3, title: "Awareness", url: "/awareness" },
+        { id: 4, title: "News", url: "/news" },
       ],
     },
     {
       title: "Resources",
       links: [
-        { id: 9, title: "Press", url: "#" },
-        { id: 10, title: "Careers", url: "#" },
-        { id: 11, title: "Newsletters", url: "#" },
-        { id: 12, title: "More", url: "#" },
+        { id: 5, title: "Cybersecurity Basics", url: "/roadmap" },
+        { id: 6, title: "Threat Intelligence", url: "/news" },
+        { id: 7, title: "Security Tips", url: "/awareness" },
+        { id: 8, title: "Expert Articles", url: "/blog" },
       ],
     },
   ],
@@ -1127,14 +1119,18 @@ export type SiteConfig = typeof siteConfig;
 
 export const Component = () => {
   const tablet = useMediaQuery("(max-width: 1024px)");
+  const theme = useThemeStore((s) => s.theme);
+  
+  // Use blue color in dark mode, gray in light mode
+  const gridColor = theme === "dark" ? "#4fbcf3" : "#6B7280";
 
   return (
-    <footer id="footer" className="w-full pb-0">
-      <div className="flex flex-col md:flex-row md:items-center md:justify-between p-10">
+    <footer id="footer" className="w-full pb-0 bg-white dark:!bg-black">
+      <div className="flex flex-col md:flex-row md:items-center md:justify-between p-10 pb-4">
         <div className="flex flex-col items-start justify-start gap-y-5 max-w-xs mx-0">
           <Link href="/" className="flex items-center gap-2">
             <Icons.logo className="size-8" />
-            <p className="text-xl font-semibold text-primary">Footer</p>
+            <p className="text-xl font-semibold text-primary">Cyber Security Hub</p>
           </Link>
           <p className="tracking-tight text-muted-foreground font-medium">
             {siteConfig.hero.description}
@@ -1174,15 +1170,14 @@ export const Component = () => {
         </div>
       </div>
       <div className="w-full h-48 md:h-64 relative mt-24 z-0">
-        <div className="absolute inset-0 bg-gradient-to-t from-transparent to-background z-10 from-40%" />
         <div className="absolute inset-0 mx-6">
           <FlickeringGrid
-            text={tablet ? "Footer" : "Streamline your workflow"}
+            text={tablet ? "Security" : "Stay Secure"}
             fontSize={tablet ? 70 : 90}
             className="h-full w-full"
             squareSize={2}
             gridGap={tablet ? 2 : 3}
-            color="#6B7280"
+            color={gridColor}
             maxOpacity={0.3}
             flickerChance={0.1}
           />

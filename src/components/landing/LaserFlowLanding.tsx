@@ -1,53 +1,39 @@
 "use client";
 
-import { useRef } from "react";
 import Link from "next/link";
 import { Shield, ArrowRight, Lock, Eye, FileText } from "lucide-react";
 import LaserFlow from "@/components/LaserFlow";
+import { useThemeStore } from "@/store/theme";
 
 export default function LaserFlowLanding() {
-  const revealImgRef = useRef<HTMLImageElement | null>(null);
+  const theme = useThemeStore((s) => s.theme);
+  const isDark = theme === "dark";
+  
+  // Different color scheme for light mode - using light blue
+  const laserFlowColor = isDark ? "#4fbcf3" : "#60a5fa";
+  
+  // Adjust intensity for light mode to be more subtle
+  const wispIntensity = isDark ? 5 : 3;
+  const fogIntensity = isDark ? 0.45 : 0.25;
+  const flowStrength = isDark ? 0.25 : 0.15;
 
   return (
     <div
-      style={{
-        minHeight: "100vh",
-        position: "relative",
-        overflow: "visible",
-        backgroundColor: "#060010",
-        paddingBottom: "10rem",
-      }}
-      onMouseMove={(e) => {
-        const rect = e.currentTarget.getBoundingClientRect();
-        const x = e.clientX - rect.left;
-        const y = e.clientY - rect.top;
-        const el = revealImgRef.current;
-        if (el) {
-          el.style.setProperty("--mx", `${x}px`);
-          el.style.setProperty("--my", `${y + rect.height * 0.5}px`);
-        }
-      }}
-      onMouseLeave={() => {
-        const el = revealImgRef.current;
-        if (el) {
-          el.style.setProperty("--mx", "-9999px");
-          el.style.setProperty("--my", "-9999px");
-        }
-      }}
+      className="min-h-screen relative overflow-visible bg-background dark:!bg-black pb-16 sm:pb-24 md:pb-32"
     >
       {/* @ts-ignore - LaserFlow is a JSX component with flexible props */}
       <LaserFlow
         horizontalBeamOffset={0.1}
         verticalBeamOffset={0.0}
-        color="#4fbcf3"
+        color={laserFlowColor}
         horizontalSizing={0.9}
         verticalSizing={5}
         wispDensity={1}
         wispSpeed={15}
-        wispIntensity={5}
+        wispIntensity={wispIntensity}
         flowSpeed={0.35}
-        flowStrength={0.25}
-        fogIntensity={0.45}
+        flowStrength={flowStrength}
+        fogIntensity={fogIntensity}
         fogScale={0.3}
         fogFallSpeed={0.6}
         decay={1.1}
@@ -55,138 +41,101 @@ export default function LaserFlowLanding() {
       />
 
       <div
+        className="absolute left-1/2 -translate-x-1/2 w-[90%] sm:w-[86%] max-w-[1200px] bg-card dark:bg-[#060010] rounded-[20px] border-2 flex items-center justify-center text-foreground dark:text-white z-[6] px-4 py-6 sm:px-8 sm:py-12 md:px-12 md:py-16 mb-12 sm:mb-20"
         style={{
-          position: "absolute",
-          top: "41%",
-          left: "50%",
-          transform: "translateX(-50%)",
-          width: "86%",
-          maxWidth: "1200px",
-          backgroundColor: "#060010",
-          borderRadius: "20px",
-          border: "2px solid #4fbcf3",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-          color: "white",
-          zIndex: 6,
-          padding: "3rem 2rem",
-          marginBottom: "5rem",
+          top: "clamp(35%, 41%, 45%)",
+          borderColor: isDark ? "#4fbcf3" : "#60a5fa",
         }}
       >
-        <div style={{ textAlign: "center", width: "100%" }}>
-          <h1 style={{ fontSize: "3.5rem", fontWeight: "bold", color: "#4fbcf3", marginBottom: "1.5rem", lineHeight: "1.2" }}>
+        <div className="text-center w-full">
+          <h1 
+            className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[3.5rem] font-bold mb-4 sm:mb-6 leading-tight"
+            style={{
+              color: isDark ? "#4fbcf3" : "#60a5fa",
+            }}
+          >
             Cyber Security Hub
           </h1>
 
-          <p style={{ fontSize: "1.3rem", color: "rgba(255,255,255,0.9)", marginBottom: "2rem", maxWidth: "700px", margin: "0 auto 2rem", lineHeight: "1.6" }}>
+          <p className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-[1.3rem] text-foreground/90 dark:text-white/90 mb-6 sm:mb-8 max-w-[700px] mx-auto leading-relaxed px-2">
             Learn, practice, and master cybersecurity. Explore roadmaps, read the latest news, and stay aware of common threats.
           </p>
 
-          <div style={{ display: "flex", gap: "1rem", justifyContent: "center", flexWrap: "wrap", marginBottom: "3rem" }}>
-            <Link href="/roadmap">
-              <button style={{ 
-                padding: "0.875rem 2rem", 
-                borderRadius: "9999px", 
-                backgroundColor: "#4fbcf3", 
-                color: "#060010", 
-                border: "none", 
-                fontSize: "1rem", 
-                fontWeight: "bold",
-                cursor: "pointer",
-                display: "inline-flex",
-                alignItems: "center",
-                gap: "0.5rem",
-                transition: "all 0.2s"
-              }}>
-                <Lock style={{ width: "18px", height: "18px" }} />
-                View Roadmap
-                <ArrowRight style={{ width: "18px", height: "18px" }} />
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-stretch sm:items-center flex-wrap mb-6 sm:mb-8 px-2">
+            <Link href="/roadmap" className="w-full sm:w-auto">
+              <button 
+                className="w-full sm:w-auto px-4 py-2.5 sm:px-6 sm:py-3 md:px-8 md:py-3.5 rounded-full text-white border-none text-sm sm:text-base font-bold cursor-pointer inline-flex items-center justify-center gap-2 transition-all duration-200 hover:opacity-90"
+                style={{
+                  backgroundColor: isDark ? "#4fbcf3" : "#60a5fa",
+                  color: isDark ? "#060010" : "#ffffff",
+                }}
+              >
+                <Lock className="w-4 h-4 sm:w-[18px] sm:h-[18px]" />
+                <span className="whitespace-nowrap">View Roadmap</span>
+                <ArrowRight className="w-4 h-4 sm:w-[18px] sm:h-[18px]" />
               </button>
             </Link>
-            <Link href="/news">
-              <button style={{ 
-                padding: "0.875rem 2rem", 
-                borderRadius: "9999px", 
-                backgroundColor: "transparent", 
-                color: "#4fbcf3", 
-                border: "2px solid #4fbcf3", 
-                fontSize: "1rem", 
-                fontWeight: "bold",
-                cursor: "pointer",
-                display: "inline-flex",
-                alignItems: "center",
-                gap: "0.5rem",
-                transition: "all 0.2s"
-              }}>
-                <Eye style={{ width: "18px", height: "18px" }} />
-                Latest News
+            <Link href="/news" className="w-full sm:w-auto">
+              <button 
+                className="w-full sm:w-auto px-4 py-2.5 sm:px-6 sm:py-3 md:px-8 md:py-3.5 rounded-full bg-transparent text-sm sm:text-base font-bold cursor-pointer inline-flex items-center justify-center gap-2 transition-all duration-200"
+                style={{
+                  color: isDark ? "#4fbcf3" : "#60a5fa",
+                  borderColor: isDark ? "#4fbcf3" : "#60a5fa",
+                  borderWidth: "2px",
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.backgroundColor = isDark ? "rgba(79, 188, 243, 0.1)" : "rgba(96, 165, 250, 0.1)";
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.backgroundColor = "transparent";
+                }}
+              >
+                <Eye className="w-4 h-4 sm:w-[18px] sm:h-[18px]" />
+                <span className="whitespace-nowrap">Latest News</span>
               </button>
             </Link>
-            <Link href="/awareness">
-              <button style={{ 
-                padding: "0.875rem 2rem", 
-                borderRadius: "9999px", 
-                backgroundColor: "transparent", 
-                color: "#4fbcf3", 
-                border: "2px solid #4fbcf3", 
-                fontSize: "1rem", 
-                fontWeight: "bold",
-                cursor: "pointer",
-                display: "inline-flex",
-                alignItems: "center",
-                gap: "0.5rem",
-                transition: "all 0.2s"
-              }}>
-                <Shield style={{ width: "18px", height: "18px" }} />
-                Awareness
+            <Link href="/awareness" className="w-full sm:w-auto">
+              <button 
+                className="w-full sm:w-auto px-4 py-2.5 sm:px-6 sm:py-3 md:px-8 md:py-3.5 rounded-full bg-transparent text-sm sm:text-base font-bold cursor-pointer inline-flex items-center justify-center gap-2 transition-all duration-200"
+                style={{
+                  color: isDark ? "#4fbcf3" : "#60a5fa",
+                  borderColor: isDark ? "#4fbcf3" : "#60a5fa",
+                  borderWidth: "2px",
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.backgroundColor = isDark ? "rgba(79, 188, 243, 0.1)" : "rgba(96, 165, 250, 0.1)";
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.backgroundColor = "transparent";
+                }}
+              >
+                <Shield className="w-4 h-4 sm:w-[18px] sm:h-[18px]" />
+                <span className="whitespace-nowrap">Awareness</span>
               </button>
             </Link>
-            <Link href="/blog">
-              <button style={{ 
-                padding: "0.875rem 2rem", 
-                borderRadius: "9999px", 
-                backgroundColor: "transparent", 
-                color: "#4fbcf3", 
-                border: "2px solid #4fbcf3", 
-                fontSize: "1rem", 
-                fontWeight: "bold",
-                cursor: "pointer",
-                display: "inline-flex",
-                alignItems: "center",
-                gap: "0.5rem",
-                transition: "all 0.2s"
-              }}>
-                <FileText style={{ width: "18px", height: "18px" }} />
-                Blog
+            <Link href="/blog" className="w-full sm:w-auto">
+              <button 
+                className="w-full sm:w-auto px-4 py-2.5 sm:px-6 sm:py-3 md:px-8 md:py-3.5 rounded-full bg-transparent text-sm sm:text-base font-bold cursor-pointer inline-flex items-center justify-center gap-2 transition-all duration-200"
+                style={{
+                  color: isDark ? "#4fbcf3" : "#60a5fa",
+                  borderColor: isDark ? "#4fbcf3" : "#60a5fa",
+                  borderWidth: "2px",
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.backgroundColor = isDark ? "rgba(79, 188, 243, 0.1)" : "rgba(96, 165, 250, 0.1)";
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.backgroundColor = "transparent";
+                }}
+              >
+                <FileText className="w-4 h-4 sm:w-[18px] sm:h-[18px]" />
+                <span className="whitespace-nowrap">Blog</span>
               </button>
             </Link>
           </div>
         </div>
       </div>
 
-      <img
-        ref={revealImgRef}
-        src="/path/to/image.jpg"
-        alt="Reveal effect"
-        style={{
-          position: "absolute",
-          width: "100%",
-          top: "-50%",
-          zIndex: 5,
-          mixBlendMode: "lighten",
-          opacity: 0.3,
-          pointerEvents: "none",
-          ["--mx" as any]: "-9999px",
-          ["--my" as any]: "-9999px",
-          WebkitMaskImage:
-            "radial-gradient(circle at var(--mx) var(--my), rgba(255,255,255,1) 0px, rgba(255,255,255,0.95) 60px, rgba(255,255,255,0.6) 120px, rgba(255,255,255,0.25) 180px, rgba(255,255,255,0) 240px)",
-          maskImage:
-            "radial-gradient(circle at var(--mx) var(--my), rgba(255,255,255,1) 0px, rgba(255,255,255,0.95) 60px, rgba(255,255,255,0.6) 120px, rgba(255,255,255,0.25) 180px, rgba(255,255,255,0) 240px)",
-          WebkitMaskRepeat: "no-repeat",
-          maskRepeat: "no-repeat",
-        }}
-      />
     </div>
   );
 }

@@ -26,7 +26,7 @@ function applyThemeClass(theme: ThemeMode) {
 }
 
 export const useThemeStore = create<ThemeState>((set, get) => ({
-  theme: "light",
+  theme: "dark",
   setTheme: (t) => {
     set({ theme: t });
     if (typeof window !== "undefined") {
@@ -47,7 +47,7 @@ export const useThemeStore = create<ThemeState>((set, get) => ({
 // Call once on client to sync from storage and ensure <html> class is set.
 export function initThemeFromStorage() {
   const stored = safeReadStoredTheme();
-  const theme = stored ?? "light";
+  const theme = stored ?? "dark";
   useThemeStore.setState({ theme });
   applyThemeClass(theme);
 }

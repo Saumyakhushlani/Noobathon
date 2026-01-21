@@ -6,8 +6,8 @@ import { BookOpen, TrendingUp, AlertTriangle, FileText, ArrowRight } from "lucid
 export default function LandingFeatures() {
   return (
     <div
+      className="bg-background dark:!bg-black"
       style={{
-        backgroundColor: "#060010",
         padding: "5rem 2rem",
         minHeight: "100vh",
       }}
@@ -21,10 +21,10 @@ export default function LandingFeatures() {
       >
         <div style={{ textAlign: "center", width: "100%" }}>
           <h2
+            className="text-[#4fbcf3] dark:text-[#4fbcf3] text-foreground dark:text-[#4fbcf3]"
             style={{
               fontSize: "2.5rem",
               fontWeight: "bold",
-              color: "#4fbcf3",
               textAlign: "center",
               marginBottom: "1rem",
               width: "100%",
@@ -34,9 +34,9 @@ export default function LandingFeatures() {
           </h2>
 
           <p
+            className="text-foreground/80 dark:text-white/80"
             style={{
               fontSize: "1.2rem",
-              color: "rgba(255,255,255,0.8)",
               textAlign: "center",
               marginBottom: "4rem",
               maxWidth: "700px",
@@ -56,11 +56,11 @@ export default function LandingFeatures() {
           }}
         >
           <div
+            className="bg-card dark:bg-[rgba(79,188,243,0.05)] border-[rgba(79,188,243,0.3)] dark:border-[rgba(79,188,243,0.3)]"
             style={{
               padding: "2rem",
               borderRadius: "16px",
-              border: "2px solid rgba(79, 188, 243, 0.3)",
-              backgroundColor: "rgba(79, 188, 243, 0.05)",
+              border: "2px solid",
               transition: "all 0.3s",
               height: "100%",
               display: "flex",
@@ -68,27 +68,27 @@ export default function LandingFeatures() {
             }}
           >
               <BookOpen
+                className="text-[#4fbcf3] dark:text-[#4fbcf3]"
                 style={{
                   width: "48px",
                   height: "48px",
-                  color: "#4fbcf3",
                   marginBottom: "1.5rem",
                 }}
               />
               <h3
+                className="text-[#4fbcf3] dark:text-[#4fbcf3]"
                 style={{
                   fontSize: "1.5rem",
                   fontWeight: "bold",
-                  color: "#4fbcf3",
                   marginBottom: "1rem",
                 }}
               >
                 Learn
               </h3>
               <p
+                className="text-foreground/80 dark:text-white/80"
                 style={{
                   fontSize: "1rem",
-                  color: "rgba(255,255,255,0.8)",
                   lineHeight: "1.7",
                   marginBottom: "1.5rem",
                   flexGrow: 1,
@@ -124,11 +124,11 @@ export default function LandingFeatures() {
             </div>
 
           <div
+            className="bg-card dark:bg-[rgba(79,188,243,0.05)] border-[rgba(79,188,243,0.3)] dark:border-[rgba(79,188,243,0.3)]"
             style={{
               padding: "2rem",
               borderRadius: "16px",
-              border: "2px solid rgba(79, 188, 243, 0.3)",
-              backgroundColor: "rgba(79, 188, 243, 0.05)",
+              border: "2px solid",
               transition: "all 0.3s",
               height: "100%",
               display: "flex",
@@ -136,27 +136,27 @@ export default function LandingFeatures() {
             }}
           >
               <TrendingUp
+                className="text-[#4fbcf3] dark:text-[#4fbcf3]"
                 style={{
                   width: "48px",
                   height: "48px",
-                  color: "#4fbcf3",
                   marginBottom: "1.5rem",
                 }}
               />
               <h3
+                className="text-[#4fbcf3] dark:text-[#4fbcf3]"
                 style={{
                   fontSize: "1.5rem",
                   fontWeight: "bold",
-                  color: "#4fbcf3",
                   marginBottom: "1rem",
                 }}
               >
                 Stay Updated
               </h3>
               <p
+                className="text-foreground/80 dark:text-white/80"
                 style={{
                   fontSize: "1rem",
-                  color: "rgba(255,255,255,0.8)",
                   lineHeight: "1.7",
                   marginBottom: "1.5rem",
                   flexGrow: 1,
@@ -192,11 +192,11 @@ export default function LandingFeatures() {
             </div>
 
           <div
+            className="bg-card dark:bg-[rgba(79,188,243,0.05)] border-[rgba(79,188,243,0.3)] dark:border-[rgba(79,188,243,0.3)]"
             style={{
               padding: "2rem",
               borderRadius: "16px",
-              border: "2px solid rgba(79, 188, 243, 0.3)",
-              backgroundColor: "rgba(79, 188, 243, 0.05)",
+              border: "2px solid",
               transition: "all 0.3s",
               height: "100%",
               display: "flex",
@@ -204,27 +204,27 @@ export default function LandingFeatures() {
             }}
           >
               <AlertTriangle
+                className="text-[#4fbcf3] dark:text-[#4fbcf3]"
                 style={{
                   width: "48px",
                   height: "48px",
-                  color: "#4fbcf3",
                   marginBottom: "1.5rem",
                 }}
               />
               <h3
+                className="text-[#4fbcf3] dark:text-[#4fbcf3]"
                 style={{
                   fontSize: "1.5rem",
                   fontWeight: "bold",
-                  color: "#4fbcf3",
                   marginBottom: "1rem",
                 }}
               >
                 Protect
               </h3>
               <p
+                className="text-foreground/80 dark:text-white/80"
                 style={{
                   fontSize: "1rem",
-                  color: "rgba(255,255,255,0.8)",
                   lineHeight: "1.7",
                   marginBottom: "1.5rem",
                   flexGrow: 1,
@@ -260,11 +260,11 @@ export default function LandingFeatures() {
             </div>
 
           <div
+            className="bg-card dark:bg-[rgba(79,188,243,0.05)] border-[rgba(79,188,243,0.3)] dark:border-[rgba(79,188,243,0.3)]"
             style={{
               padding: "2rem",
               borderRadius: "16px",
-              border: "2px solid rgba(79, 188, 243, 0.3)",
-              backgroundColor: "rgba(79, 188, 243, 0.05)",
+              border: "2px solid",
               transition: "all 0.3s",
               height: "100%",
               display: "flex",
@@ -272,27 +272,27 @@ export default function LandingFeatures() {
             }}
           >
               <FileText
+                className="text-[#4fbcf3] dark:text-[#4fbcf3]"
                 style={{
                   width: "48px",
                   height: "48px",
-                  color: "#4fbcf3",
                   marginBottom: "1.5rem",
                 }}
               />
               <h3
+                className="text-[#4fbcf3] dark:text-[#4fbcf3]"
                 style={{
                   fontSize: "1.5rem",
                   fontWeight: "bold",
-                  color: "#4fbcf3",
                   marginBottom: "1rem",
                 }}
               >
                 Blog
               </h3>
               <p
+                className="text-foreground/80 dark:text-white/80"
                 style={{
                   fontSize: "1rem",
-                  color: "rgba(255,255,255,0.8)",
                   lineHeight: "1.7",
                   marginBottom: "1.5rem",
                   flexGrow: 1,
@@ -329,17 +329,18 @@ export default function LandingFeatures() {
         </div>
 
         <div
+          className="border-[rgba(79,188,243,0.2)] dark:border-[rgba(79,188,243,0.2)]"
           style={{
             marginTop: "4rem",
             paddingTop: "3rem",
-            borderTop: "1px solid rgba(79, 188, 243, 0.2)",
+            borderTop: "1px solid",
             textAlign: "center",
           }}
         >
           <p
+            className="text-foreground/70 dark:text-white/70"
             style={{
               fontSize: "1.1rem",
-              color: "rgba(255,255,255,0.7)",
               maxWidth: "700px",
               margin: "0 auto",
               lineHeight: "1.7",

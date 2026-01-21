@@ -2,7 +2,8 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { ClerkProvider } from "@clerk/nextjs";
-import ThemeNavbar from "@/components/navbar/ThemeNavbar";
+import ScrollNavigationMenu from "@/components/scroll-navigation-menu";
+import { Component as Footer } from "@/components/flickering-footer";
 import { THEME_STORAGE_KEY } from "@/store/theme-constants";
 
 const geistSans = Geist({
@@ -34,15 +35,16 @@ export default function RootLayout({
             dangerouslySetInnerHTML={{
               __html: `(function(){try{var k=${JSON.stringify(
                 THEME_STORAGE_KEY
-              )};var t=localStorage.getItem(k);if(t==="dark"){document.documentElement.classList.add("dark");}else{document.documentElement.classList.remove("dark");}}catch(e){}})();`,
+              )};var t=localStorage.getItem(k);if(t==="light"){document.documentElement.classList.remove("dark");}else{document.documentElement.classList.add("dark");}}catch(e){document.documentElement.classList.add("dark");}})();`,
             }}
           />
         </head>
         <body
           className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-dvh bg-background text-foreground`}
         >
-          <ThemeNavbar />
+          <ScrollNavigationMenu />
           {children}
+          <Footer />
         </body>
       </ClerkProvider>
     </html>

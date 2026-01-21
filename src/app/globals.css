@@ -122,6 +122,8 @@
   --paper: hsl(0 0% 9%);
   /* News page: pure black background in dark mode */
   --news-bg: #000;
+  /* Landing and footer: pure black background in dark mode */
+  --landing-bg: #000;
   /* News cards: a distinct (non-black) surface so they don't blend */
   --news-card-paper: color-mix(in oklab, black 18%, #fff3d4);
   --news-card-shade: rgba(0, 0, 0, 0.10);

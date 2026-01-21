@@ -25,7 +25,7 @@ export default function NewsPage() {
 
   return (
     <div
-      className="min-h-screen px-4 py-10 md:px-8 lg:px-16"
+      className="min-h-screen px-4 py-10 md:px-8 md:mt-12 lg:px-16"
       style={{ background: "var(--news-bg)" }}
     >
       <div className="mx-auto w-full max-w-7xl">
