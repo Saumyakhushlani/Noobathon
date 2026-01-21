@@ -11,6 +11,7 @@
   "dependencies": {
     "@clerk/nextjs": "^6.36.8",
     "@gsap/react": "^2.1.2",
+    "@imagekit/nodejs": "^7.2.1",
     "@platejs/basic-nodes": "^52.0.11",
     "@prisma/client": "^6.19.2",
     "@radix-ui/react-avatar": "^1.1.11",
@@ -23,6 +24,7 @@
     "clsx": "^2.1.1",
     "framer-motion": "^12.27.2",
     "gsap": "^3.14.2",
+    "imagekit": "^6.0.0",
     "lottie-react": "^2.4.1",
     "lucide-react": "^0.562.0",
     "motion": "^12.27.3",
