@@ -3,7 +3,7 @@
 import * as React from "react"
 import { useState } from "react"
 import { motion, AnimatePresence, useScroll, useMotionValueEvent } from "framer-motion"
-import { Menu, X, Home, Newspaper, Map, Shield, FileText, Moon, Sun, LogOut } from "lucide-react"
+import { Menu, X, Home, Newspaper, Map, Shield, FileText, Moon, Sun, LogOut, LogIn, UserPlus } from "lucide-react"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { useClerk, useUser } from "@clerk/nextjs"
@@ -207,8 +207,8 @@ export default function ScrollNavigationMenu() {
                 )}
               </motion.button>
 
-              {/* Sign Out Button */}
-              {isSignedIn && (
+              {/* Authentication Buttons */}
+              {isSignedIn ? (
                 <motion.button
                   onClick={handleSignOut}
                   className="flex items-center space-x-2 px-3 py-2 rounded-md text-sm font-medium text-foreground hover:text-destructive transition-colors"
@@ -218,6 +218,29 @@ export default function ScrollNavigationMenu() {
                   <LogOut className="w-5 h-5" />
                   <span>Sign Out</span>
                 </motion.button>
+              ) : (
+                <>
+                  <Link href="/sign-in">
+                    <motion.button
+                      className="flex items-center space-x-2 px-3 py-2 rounded-md text-sm font-medium text-foreground hover:text-primary transition-colors"
+                      whileHover={{ scale: 1.05 }}
+                      whileTap={{ scale: 0.95 }}
+                    >
+                      <LogIn className="w-5 h-5" />
+                      <span>Sign In</span>
+                    </motion.button>
+                  </Link>
+                  <Link href="/sign-up">
+                    <motion.button
+                      className="flex items-center space-x-2 px-3 py-2 rounded-md text-sm font-medium bg-primary text-primary-foreground hover:opacity-90 transition-colors"
+                      whileHover={{ scale: 1.05 }}
+                      whileTap={{ scale: 0.95 }}
+                    >
+                      <UserPlus className="w-5 h-5" />
+                      <span>Sign Up</span>
+                    </motion.button>
+                  </Link>
+                </>
               )}
             </div>
 
@@ -348,15 +371,18 @@ export default function ScrollNavigationMenu() {
                     </button>
                   </motion.div>
 
-                  {/* Sign Out in Mobile Menu */}
-                  {isSignedIn && (
+                  {/* Authentication in Mobile Menu */}
+                  {isSignedIn ? (
                     <motion.div
                       variants={itemVariants}
                       whileHover={{ scale: 1.05, x: 10 }}
                       whileTap={{ scale: 0.95 }}
                     >
                       <button
-                        onClick={handleSignOut}
+                        onClick={() => {
+                          handleSignOut()
+                          toggleMenu()
+                        }}
                         className="flex items-center space-x-4 p-4 rounded-xl hover:bg-muted transition-colors group w-full text-destructive"
                       >
                         <motion.div
@@ -371,6 +397,53 @@ export default function ScrollNavigationMenu() {
                         </span>
                       </button>
                     </motion.div>
+                  ) : (
+                    <>
+                      <motion.div
+                        variants={itemVariants}
+                        whileHover={{ scale: 1.05, x: 10 }}
+                        whileTap={{ scale: 0.95 }}
+                      >
+                        <Link
+                          href="/sign-in"
+                          onClick={toggleMenu}
+                          className="flex items-center space-x-4 p-4 rounded-xl hover:bg-muted transition-colors group w-full"
+                        >
+                          <motion.div
+                            className="text-primary"
+                            whileHover={{ rotate: 360 }}
+                            transition={{ duration: 0.3 }}
+                          >
+                            <LogIn className="w-5 h-5" />
+                          </motion.div>
+                          <span className="text-lg font-medium text-foreground group-hover:text-primary">
+                            Sign In
+                          </span>
+                        </Link>
+                      </motion.div>
+                      <motion.div
+                        variants={itemVariants}
+                        whileHover={{ scale: 1.05, x: 10 }}
+                        whileTap={{ scale: 0.95 }}
+                      >
+                        <Link
+                          href="/sign-up"
+                          onClick={toggleMenu}
+                          className="flex items-center space-x-4 p-4 rounded-xl hover:bg-muted transition-colors group w-full bg-primary/10"
+                        >
+                          <motion.div
+                            className="text-primary"
+                            whileHover={{ rotate: 360 }}
+                            transition={{ duration: 0.3 }}
+                          >
+                            <UserPlus className="w-5 h-5" />
+                          </motion.div>
+                          <span className="text-lg font-medium text-foreground group-hover:text-primary">
+                            Sign Up
+                          </span>
+                        </Link>
+                      </motion.div>
+                    </>
                   )}
                 </div>
 

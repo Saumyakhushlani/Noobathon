@@ -3,7 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { ClerkProvider } from "@clerk/nextjs";
 import ScrollNavigationMenu from "@/components/scroll-navigation-menu";
-import { Component as Footer } from "@/components/flickering-footer";
+import FooterWrapper from "@/components/FooterWrapper";
 import { THEME_STORAGE_KEY } from "@/store/theme-constants";
 
 const geistSans = Geist({
@@ -44,7 +44,7 @@ export default function RootLayout({
         >
           <ScrollNavigationMenu />
           {children}
-          <Footer />
+          <FooterWrapper />
         </body>
       </ClerkProvider>
     </html>

@@ -233,8 +233,9 @@ export default function CyberSecurityRoadmapDiagram() {
   }
 
   return (
-    <section className="mx-auto w-full max-w-7xl px-4 md:px-8 lg:px-10 pb-20">
-      <div className="mb-8">
+    <div className="w-full bg-background dark:bg-[#171717]">
+      <section className="mx-auto w-full max-w-7xl px-4 md:px-8 lg:px-10 pb-20">
+        <div className="mb-8">
         <h2 className="text-2xl md:text-3xl font-extrabold tracking-tight text-gray-900">
           <TextBlockAnimation
             blockColor="var(--brand-purple)"
@@ -352,7 +353,8 @@ export default function CyberSecurityRoadmapDiagram() {
           </div>
         )}
       </Modal>
-    </section>
+      </section>
+    </div>
   );
 }
 

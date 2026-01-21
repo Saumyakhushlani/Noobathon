@@ -2,7 +2,7 @@ import Parser from "rss-parser";
 
 export const runtime = "nodejs";
 
-const FEED_URL = "https://feeds.feedburner.com/TheHackersNews";
+const FEED_URL = process.env.NEWS_API
 
 export async function GET() {
   try {

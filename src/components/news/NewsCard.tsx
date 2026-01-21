@@ -6,6 +6,7 @@ import { motion } from "motion/react";
 import { ExternalLink, Heart, Share2, ShieldCheck } from "lucide-react";
 
 import { cn } from "@/lib/utils";
+import { useThemeStore } from "@/store/theme";
 
 export type NewsItem = {
   title: string | null;
@@ -43,8 +44,15 @@ export default function NewsCard({
   index?: number;
   className?: string;
 }) {
-  // Keep cards "paper-like" even in dark mode
-  const paper = "var(--news-card-paper)";
+  const theme = useThemeStore((s) => s.theme);
+  const isDark = theme === "dark";
+  
+  // Use light paper color in light mode, dark color in dark mode
+  const paper = isDark ? "hsl(0 0% 12%)" : "var(--news-card-paper)";
+  // Use theme-aware shadow color: white shadow in dark mode, black in light mode
+  const shadowColor = isDark ? "var(--hard-shadow)" : "#111111";
+  // Use theme-aware border color: lighter in dark mode for visibility
+  const borderColor = isDark ? "rgba(255, 255, 255, 0.2)" : "#111111";
   const ink = "#111111";
   const yellow = "#ffd900";
   const red = "var(--brand-pink)";
@@ -92,11 +100,11 @@ export default function NewsCard({
         className="relative flex h-full w-full min-h-[340px] flex-col rounded-xl border-2 p-4 shadow-[10px_10px_0_0_var(--shadow-color)] transition-shadow"
         style={
           {
-            borderColor: ink,
+            borderColor: borderColor,
             backgroundColor: paper,
             backgroundImage:
               "linear-gradient(180deg, var(--news-card-shade), rgba(0,0,0,0) 55%)",
-            ["--shadow-color" as any]: ink,
+            ["--shadow-color" as any]: shadowColor,
           } as React.CSSProperties
         }
       >
@@ -124,7 +132,10 @@ export default function NewsCard({
             >
               {src}
             </div>
-            <div className="no-dark-swap mt-1 text-xs font-semibold tracking-widest text-gray-700">
+            <div 
+              className="mt-1 text-xs font-semibold tracking-widest"
+              style={{ color: isDark ? "rgba(255, 255, 255, 0.7)" : "#374151" }}
+            >
               {date || "Latest"}
             </div>
           </div>
@@ -138,14 +149,21 @@ export default function NewsCard({
             rel="noreferrer"
             className="block"
           >
-            <h3 className="no-dark-swap text-lg font-black leading-snug text-gray-900 hover:underline underline-offset-4">
+            <h3 
+              className="text-lg font-black leading-snug hover:underline underline-offset-4"
+              style={{ color: isDark ? "#ffffff" : "#111827" }}
+            >
               {item.title ?? "Untitled"}
             </h3>
           </a>
 
           <div
-            className="no-dark-swap relative mt-3 rounded-xl border-2 px-4 py-3 text-[15px] leading-relaxed text-gray-700"
-            style={{ borderColor: ink, backgroundColor: paper }}
+            className="relative mt-3 rounded-xl border-2 px-4 py-3 text-[15px] leading-relaxed"
+            style={{ 
+              borderColor: borderColor, 
+              backgroundColor: paper,
+              color: isDark ? "rgba(255, 255, 255, 0.8)" : "#374151"
+            }}
           >
             <p className="line-clamp-5">{item.description}</p>
           </div>
@@ -169,11 +187,16 @@ export default function NewsCard({
               View article <ExternalLink className="h-4 w-4" />
             </a>
           ) : (
-            <div className="no-dark-swap text-xs font-semibold text-gray-600">No link</div>
+            <div 
+              className="text-xs font-semibold"
+              style={{ color: isDark ? "rgba(255, 255, 255, 0.6)" : "#4B5563" }}
+            >
+              No link
+            </div>
           )}
 
           <div className="flex items-center gap-2">
-            <ActionButton label="Like" accent={red}>
+            <ActionButton label="Like" accent={red} isDark={isDark}>
               <Heart className="h-4 w-4" />
             </ActionButton>
             <ActionButton
@@ -181,6 +204,7 @@ export default function NewsCard({
               accent={blue}
               onClick={handleShare}
               disabled={!item.link}
+              isDark={isDark}
             >
               <Share2 className="h-4 w-4" />
             </ActionButton>
@@ -197,12 +221,14 @@ function ActionButton({
   accent,
   onClick,
   disabled,
+  isDark = false,
 }: {
   children: React.ReactNode;
   label: string;
   accent: string;
   onClick?: () => void;
   disabled?: boolean;
+  isDark?: boolean;
 }) {
   const ink = "#111111";
   const yellow = "#ffd900";
@@ -230,7 +256,7 @@ function ActionButton({
         (e.currentTarget as HTMLButtonElement).style.backgroundColor = yellow;
       }}
     >
-      <span className="no-dark-swap text-gray-900">{children}</span>
+      <span style={{ color: isDark ? "#111827" : "#111827" }}>{children}</span>
     </motion.button>
   );
 }

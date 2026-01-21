@@ -17,7 +17,7 @@ export default function CookieConsentSection() {
         }}
       >
         <div className="grid gap-8 md:grid-cols-2 md:items-center">
-          <div className="order-2 md:order-1 flex justify-center">
+          <div className="order-2 md:order-2 flex justify-center">
             <div className="w-full max-w-[520px] overflow-hidden rounded-2xl border border-black/10 p-4 bg-white">
               
               <div className="flex justify-center">
@@ -26,7 +26,7 @@ export default function CookieConsentSection() {
             </div>
           </div>
 
-          <div className="order-1 md:order-2">
+          <div className="order-1 md:order-1">
             <div className="flex items-center gap-2">
               <Cookie className="h-5 w-5 text-[var(--brand-pink)]" />
               <h2 className="text-xl md:text-2xl font-extrabold tracking-tight text-gray-900">
