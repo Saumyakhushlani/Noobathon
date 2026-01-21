@@ -9,10 +9,12 @@ import OtpUpiPinSection from "@/components/awareness/OtpUpiPinSection";
 import PersonalMediaSection from "@/components/awareness/PersonalMediaSection";
 import CardDetailsSection from "@/components/awareness/CardDetailsSection";
 import { Shield } from "lucide-react";
+import PageLoader from "@/components/PageLoader";
 
 export default function Page() {
   return (
-    <main className="awareness-root pb-16 mt-12">
+    <PageLoader>
+      <main className="awareness-root pb-16 mt-12">
       <section className="mx-auto w-full max-w-7xl px-4 md:px-8 lg:px-10 pt-14 pb-6">
         <div className="flex items-center gap-3">
           <Shield className="h-9 w-9 md:h-12 md:w-12 text-[var(--brand-purple)]" />
@@ -33,6 +35,7 @@ export default function Page() {
       <OtpUpiPinSection />
       <PersonalMediaSection />
       <CardDetailsSection />
-    </main>
+      </main>
+    </PageLoader>
   );
 }
