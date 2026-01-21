@@ -43,7 +43,8 @@ export default function NewsCard({
   index?: number;
   className?: string;
 }) {
-  const paper = "#fefae8";
+  // Keep cards "paper-like" even in dark mode
+  const paper = "var(--news-card-paper)";
   const ink = "#111111";
   const yellow = "#ffd900";
   const red = "var(--brand-pink)";
@@ -93,6 +94,8 @@ export default function NewsCard({
           {
             borderColor: ink,
             backgroundColor: paper,
+            backgroundImage:
+              "linear-gradient(180deg, var(--news-card-shade), rgba(0,0,0,0) 55%)",
             ["--shadow-color" as any]: ink,
           } as React.CSSProperties
         }
@@ -121,7 +124,7 @@ export default function NewsCard({
             >
               {src}
             </div>
-            <div className="mt-1 text-xs font-semibold tracking-widest text-black/80">
+            <div className="no-dark-swap mt-1 text-xs font-semibold tracking-widest text-gray-700">
               {date || "Latest"}
             </div>
           </div>
@@ -135,13 +138,13 @@ export default function NewsCard({
             rel="noreferrer"
             className="block"
           >
-            <h3 className="text-lg font-black leading-snug text-black hover:underline underline-offset-4">
+            <h3 className="no-dark-swap text-lg font-black leading-snug text-gray-900 hover:underline underline-offset-4">
               {item.title ?? "Untitled"}
             </h3>
           </a>
 
           <div
-            className="relative mt-3 rounded-xl border-2 px-4 py-3 text-[15px] leading-relaxed text-black/80"
+            className="no-dark-swap relative mt-3 rounded-xl border-2 px-4 py-3 text-[15px] leading-relaxed text-gray-700"
             style={{ borderColor: ink, backgroundColor: paper }}
           >
             <p className="line-clamp-5">{item.description}</p>
@@ -166,7 +169,7 @@ export default function NewsCard({
               View article <ExternalLink className="h-4 w-4" />
             </a>
           ) : (
-            <div className="text-xs font-semibold text-black/70">No link</div>
+            <div className="no-dark-swap text-xs font-semibold text-gray-600">No link</div>
           )}
 
           <div className="flex items-center gap-2">
@@ -227,7 +230,7 @@ function ActionButton({
         (e.currentTarget as HTMLButtonElement).style.backgroundColor = yellow;
       }}
     >
-      <span className="text-black">{children}</span>
+      <span className="no-dark-swap text-gray-900">{children}</span>
     </motion.button>
   );
 }

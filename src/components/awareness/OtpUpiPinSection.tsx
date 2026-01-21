@@ -13,7 +13,7 @@ export default function OtpUpiPinSection() {
         className="rounded-2xl border-2 p-6 md:p-8"
         style={{
           borderColor: "var(--brand-blue)",
-          backgroundColor: "color-mix(in oklab, var(--brand-blue) 6%, white)",
+          backgroundColor: "color-mix(in oklab, var(--brand-blue) 10%, var(--background))",
         }}
       >
         <div className="grid gap-8 md:grid-cols-2 md:items-center">

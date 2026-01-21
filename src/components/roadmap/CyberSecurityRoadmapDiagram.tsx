@@ -82,8 +82,8 @@ function Box({
       className={[
         "inline-flex max-w-full items-center justify-center rounded-md border-2 px-4 py-2 text-sm font-semibold",
         "whitespace-normal break-words text-center",
-        "shadow-[4px_4px_0_0_#111] transition-transform transition-colors transition-shadow",
-        "hover:-translate-y-[1px] hover:shadow-[6px_6px_0_0_#111]",
+        "shadow-[4px_4px_0_0_var(--hard-shadow)] transition-transform transition-colors transition-shadow",
+        "hover:-translate-y-[1px] hover:shadow-[6px_6px_0_0_var(--hard-shadow-hover)]",
         className ?? "",
       ].join(" ")}
       style={{
@@ -276,8 +276,14 @@ export default function CyberSecurityRoadmapDiagram() {
         {topLevel.map((section) => (
           <div
             key={`${section.label}-${section.nodeId ?? "x"}`}
-            className="rounded-2xl border-2 p-5 shadow-[10px_10px_0_0_#111]"
-            style={{ borderColor: "#111", backgroundColor: "#fefae8" }}
+            className="rounded-2xl border-2 p-5 shadow-[10px_10px_0_0_var(--ink)]"
+            style={
+              {
+                borderColor: "var(--ink)",
+                backgroundColor: "var(--paper)",
+                ["--ink" as any]: "var(--foreground)",
+              } as React.CSSProperties
+            }
           >
             <div className="mt-4 space-y-3">
               <TreeSection node={section} onOpen={openTopic} />

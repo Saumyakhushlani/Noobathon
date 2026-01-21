@@ -136,7 +136,7 @@ export default function CyberSecurityTopicButtons() {
               onClick={() => fetchTopic(t)}
               className={[
                 "rounded-xl border-2 px-3 py-2 text-left text-sm font-semibold text-white",
-                "shadow-[4px_4px_0_0_#111] transition-transform transition-shadow hover:-translate-y-[1px] hover:shadow-[6px_6px_0_0_#111]",
+                "shadow-[4px_4px_0_0_var(--hard-shadow)] transition-transform transition-shadow hover:-translate-y-[1px] hover:shadow-[6px_6px_0_0_var(--hard-shadow-hover)]",
                 "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2",
                 palette.ring,
                 isActive ? "ring-2 ring-offset-2" : "",

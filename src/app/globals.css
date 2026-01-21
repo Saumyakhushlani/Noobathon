@@ -58,6 +58,12 @@
   --radius: 0.625rem;
   --background: oklch(1 0 0);
   --foreground: oklch(0.145 0 0);
+  --paper: #fefae8;
+  --hard-shadow: #111111;
+  --hard-shadow-hover: #111111;
+  --news-card-paper: var(--paper);
+  --news-card-shade: rgba(0, 0, 0, 0.04);
+  --news-bg: linear-gradient(180deg, #ffffff 0%, #f0f9ff 45%, #fdf2f8 100%);
   --brand-blue: #60a5fa;
   --brand-pink: #ec4899;
   --brand-purple: #a855f7;
@@ -109,6 +115,38 @@
 }
 
 .dark {
+  /* Neutral-900 style dark theme (not pure black) */
+  --background: hsl(0 0% 9%); /* ~ tailwind neutral-900 */
+  --foreground: oklch(1 0 0);
+  /* Default "paper" surfaces in dark mode (used across app) */
+  --paper: hsl(0 0% 9%);
+  /* News page: pure black background in dark mode */
+  --news-bg: #000;
+  /* News cards: a distinct (non-black) surface so they don't blend */
+  --news-card-paper: color-mix(in oklab, black 18%, #fff3d4);
+  --news-card-shade: rgba(0, 0, 0, 0.10);
+
+  /* Hard shadows that remain visible on dark backgrounds */
+  --hard-shadow: rgba(255, 255, 255, 0.28);
+  --hard-shadow-hover: rgba(255, 255, 255, 0.38);
+
+
+  --card: hsl(0 0% 9%);
+  --card-foreground: oklch(1 0 0);
+  --popover: hsl(0 0% 9%);
+  --popover-foreground: oklch(1 0 0);
+  --primary: oklch(1 0 0);
+  --primary-foreground: oklch(0.145 0 0);
+  --secondary: hsl(0 0% 9%);
+  --secondary-foreground: oklch(1 0 0);
+  --muted: hsl(0 0% 9%);
+  --muted-foreground: oklch(0.76 0 0);
+  --accent: hsl(0 0% 9%);
+  --accent-foreground: oklch(1 0 0);
+  --border: hsl(0 0% 20%);
+  --input: hsl(0 0% 20%);
+  --ring: oklch(0.5 0 0);
+
   --d-bg: hsl(0 0% 10%);
   --d-muted: hsl(0 0% 20%);
   --d-fg: hsl(0 0% 100%);
@@ -116,4 +154,47 @@
   --d-sheet: hsl(0 0% 12%);
   --highlight: oklch(0.852 0.199 91.936);
   --brand: oklch(0.707 0.165 254.624);
+}
+
+/* Compatibility layer so existing pages/components "just work" in dark mode */
+@layer utilities {
+  /* Awareness page: pure black background in dark mode (page-local) */
+  .dark .awareness-root {
+    background: #000;
+    --background: #000;
+  }
+
+  .dark .bg-white {
+    @apply bg-card;
+  }
+  .dark .text-gray-900:not(.no-dark-swap) {
+    @apply text-foreground;
+  }
+  .dark .text-gray-800:not(.no-dark-swap) {
+    @apply text-foreground;
+  }
+  .dark .text-gray-700:not(.no-dark-swap) {
+    @apply text-foreground/90;
+  }
+  .dark .text-gray-600:not(.no-dark-swap) {
+    @apply text-foreground/75;
+  }
+  .dark .text-gray-500:not(.no-dark-swap) {
+    @apply text-foreground/70;
+  }
+  .dark .bg-gray-50 {
+    @apply bg-white/5;
+  }
+  .dark .bg-gray-100 {
+    @apply bg-white/5;
+  }
+  .dark .border-black\/10 {
+    @apply border-white/10;
+  }
+  .dark .border-black\/5 {
+    @apply border-white/10;
+  }
+  .dark .divide-black\/10 > :not([hidden]) ~ :not([hidden]) {
+    border-color: color-mix(in oklab, white 10%, transparent);
+  }
 }

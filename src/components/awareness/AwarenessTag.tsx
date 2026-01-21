@@ -23,9 +23,10 @@ export default function AwarenessTag({
     <span
       className="inline-flex items-center rounded-full px-3.5 py-1.5 text-sm font-medium leading-none ring-1 ring-inset"
       style={{
-        backgroundColor: `color-mix(in oklab, ${accent} 12%, white)`,
-        color: "rgb(17 24 39)",
-        borderColor: accent,
+        backgroundColor: `color-mix(in oklab, ${accent} 14%, var(--background))`,
+        color: "var(--foreground)",
+        // ring color
+        ["--tw-ring-color" as any]: accent,
       }}
     >
       {children}

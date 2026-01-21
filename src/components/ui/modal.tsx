@@ -70,7 +70,7 @@ export default function Modal({ open, onClose, title, children, className }: Mod
             </div>
             <button
               onClick={onClose}
-              className="rounded-lg px-3 py-1.5 text-sm font-semibold text-gray-700 hover:bg-gray-100"
+              className="rounded-lg px-3 py-1.5 text-sm font-semibold text-gray-700 hover:text-gray-900 hover:bg-gray-100 dark:text-white/80 dark:hover:text-white dark:hover:bg-white/10"
             >
               Close
             </button>

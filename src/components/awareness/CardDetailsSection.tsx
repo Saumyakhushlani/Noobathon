@@ -13,7 +13,7 @@ export default function CardDetailsSection() {
         className="rounded-2xl border-2 p-6 md:p-8"
         style={{
           borderColor: "var(--brand-purple)",
-          backgroundColor: "color-mix(in oklab, var(--brand-purple) 6%, white)",
+          backgroundColor: "color-mix(in oklab, var(--brand-purple) 10%, var(--background))",
         }}
       >
         <div className="grid gap-8 md:grid-cols-2 md:items-center">

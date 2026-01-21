@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { ClerkProvider } from "@clerk/nextjs";
+import ThemeNavbar from "@/components/navbar/ThemeNavbar";
+import { THEME_STORAGE_KEY } from "@/store/theme-constants";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -24,11 +26,22 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <ClerkProvider>
+        <head>
+          <script
+            // Set theme class before paint to avoid flash.
+            dangerouslySetInnerHTML={{
+              __html: `(function(){try{var k=${JSON.stringify(
+                THEME_STORAGE_KEY
+              )};var t=localStorage.getItem(k);if(t==="dark"){document.documentElement.classList.add("dark");}else{document.documentElement.classList.remove("dark");}}catch(e){}})();`,
+            }}
+          />
+        </head>
         <body
-          className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+          className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-dvh bg-background text-foreground`}
         >
+          <ThemeNavbar />
           {children}
         </body>
       </ClerkProvider>

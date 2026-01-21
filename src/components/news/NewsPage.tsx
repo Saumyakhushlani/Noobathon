@@ -24,8 +24,11 @@ export default function NewsPage() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-white via-sky-50 to-fuchsia-50 px-4 py-10 md:px-8 lg:px-10">
-      <div className="mx-auto w-full max-w-6xl">
+    <div
+      className="min-h-screen px-4 py-10 md:px-8 lg:px-16"
+      style={{ background: "var(--news-bg)" }}
+    >
+      <div className="mx-auto w-full max-w-7xl">
         <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {items.map((item, idx) => (
             <NewsCard key={item.link ?? `${item.title}-${idx}`} item={item} index={idx} />
