@@ -1,5 +1,5 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
 const Card = () => {
   return (
@@ -11,24 +11,40 @@ const Card = () => {
               <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z" />
             </svg>
           </div>
-          <div className="brutalist-card__alert">Warning</div>
+          <div className="brutalist-card__alert">Security Alert</div>
         </div>
         <div className="brutalist-card__message">
-          This is a brutalist card with a very angry button. Proceed with caution,
-          you've been warned.
+          Your device may be infected. Immediate action required.
+          <br />
+          Do not close this page.
+          <br />
+          Call Support: 1-800-555-0199
+          <br />
+          Act within 02:00 minutes to prevent data loss.
         </div>
         <div className="brutalist-card__actions">
-          <a href="#" className="brutalist-card__button brutalist-card__button--mark">Mark as Read</a>
-          <a href="#" className="brutalist-card__button brutalist-card__button--read">Okay</a>
+          <a
+            href="#"
+            className="brutalist-card__button brutalist-card__button--mark"
+          >
+            Scan now
+          </a>
+          <a
+            href="#"
+            className="brutalist-card__button brutalist-card__button--read"
+          >
+            Fix now
+          </a>
         </div>
       </div>
     </StyledWrapper>
   );
-}
+};
 
 const StyledWrapper = styled.div`
   .brutalist-card {
-    width: 320px;
+    width: min(420px, 100%);
+    margin: 0 auto;
     border: 4px solid #000;
     background-color: #fff;
     padding: 1.5rem;
@@ -147,6 +163,45 @@ const StyledWrapper = styled.div`
   .brutalist-card__button:active {
     transform: translate(5px, 5px);
     box-shadow: none;
-  }`;
+  }
+
+  @media (max-width: 480px) {
+    .brutalist-card {
+      padding: 1.25rem;
+      box-shadow: 8px 8px 0 #000;
+    }
+    .brutalist-card__alert {
+      font-size: 1.25rem;
+    }
+    .brutalist-card__message {
+      font-size: 0.85rem;
+    }
+    .brutalist-card__button {
+      font-size: 0.95rem;
+      padding: 0.7rem;
+    }
+  }
+
+  @media (max-width: 360px) {
+    .brutalist-card {
+      padding: 1rem;
+      border-width: 3px;
+      box-shadow: 6px 6px 0 #000;
+    }
+    .brutalist-card__header {
+      gap: 0.75rem;
+      padding-bottom: 0.75rem;
+    }
+    .brutalist-card__alert {
+      font-size: 1.1rem;
+    }
+    .brutalist-card__button {
+      font-size: 0.9rem;
+      padding: 0.65rem;
+      box-shadow: 4px 4px 0 #000;
+    }
+  }
+`;
 
 export default Card;
+
