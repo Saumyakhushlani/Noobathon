@@ -79,7 +79,6 @@ export async function POST(req) {
       error && typeof error === "object" && "message" in error
         ? String(error.message)
         : "Failed to upload image";
-    console.error("ImageKit upload error:", error);
     return NextResponse.json({ error: message }, { status: 500 });
   }
 }

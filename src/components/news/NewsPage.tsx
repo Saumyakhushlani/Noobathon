@@ -15,10 +15,8 @@ export default function NewsPage() {
       try {
         const res = await fetch('/api/news');
         const json = (await res.json()) as NewsApiResponse;
-        console.log('NEWS_API_RESPONSE', json);
         if (json && 'success' in json && json.success) setItems(json.items ?? []);
       } catch (err) {
-        console.error('NEWS_API_ERROR', err);
       }
     })();
   }, []);

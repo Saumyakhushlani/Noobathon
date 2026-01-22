@@ -76,7 +76,6 @@ export default function ScrollNavigationMenu() {
       await signOut()
       toggleMenu()
     } catch (error) {
-      console.error("Sign out error:", error)
     }
   }
 
@@ -90,10 +89,10 @@ export default function ScrollNavigationMenu() {
       scale: 0.8,
       y: -50,
       transition: {
-        type: "spring",
+        type: "spring" as const,
         stiffness: 300,
         damping: 30,
-        when: "afterChildren",
+        when: "afterChildren" as const,
         staggerChildren: 0.05,
         staggerDirection: -1
       }
@@ -103,10 +102,10 @@ export default function ScrollNavigationMenu() {
       scale: 1,
       y: 0,
       transition: {
-        type: "spring",
+        type: "spring" as const,
         stiffness: 300,
         damping: 30,
-        when: "beforeChildren",
+        when: "beforeChildren" as const,
         staggerChildren: 0.1
       }
     }
@@ -123,7 +122,7 @@ export default function ScrollNavigationMenu() {
       opacity: 1,
       scale: 1,
       transition: {
-        type: "spring",
+        type: "spring" as const,
         stiffness: 400,
         damping: 25
       }

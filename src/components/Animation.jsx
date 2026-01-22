@@ -39,7 +39,6 @@ export const Animation = () => {
       .catch((err) => {
         clearTimeout(timeoutId);
         if (err.name !== 'AbortError') {
-          console.error('Error loading Wonder.json:', err);
         }
       });
   }, []);
@@ -94,7 +93,6 @@ export const OtpAnimation = () => {
       .catch((err) => {
         clearTimeout(timeoutId);
         if (err.name !== 'AbortError') {
-          console.error('Error loading Wonder.json:', err);
         }
       });
   }, []);
@@ -148,7 +146,6 @@ export const ImageUpload = () => {
       .catch((err) => {
         clearTimeout(timeoutId);
         if (err.name !== 'AbortError') {
-          console.error('Error loading Wonder.json:', err);
         }
       });
   }, []);
@@ -202,7 +199,6 @@ export const Browser = () => {
       .catch((err) => {
         clearTimeout(timeoutId);
         if (err.name !== 'AbortError') {
-          console.error('Error loading Wonder.json:', err);
         }
       });
   }, []);
@@ -254,7 +250,6 @@ export const CardAnimation = () => {
       .catch((err) => {
         clearTimeout(timeoutId);
         if (err.name !== "AbortError") {
-          console.error("Error loading card.json:", err);
         }
       });
   }, []);

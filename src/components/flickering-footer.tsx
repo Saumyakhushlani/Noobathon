@@ -34,7 +34,6 @@ export const getRGBA = (
 
     return Color.formatRGBA(Color.parse(cssColor));
   } catch (e) {
-    console.error("Color parsing failed:", e);
     return fallback;
   }
 };
