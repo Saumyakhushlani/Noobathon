@@ -2,10 +2,17 @@ import Parser from "rss-parser";
 
 export const runtime = "nodejs";
 
-const FEED_URL = process.env.NEWS_API
+const FEED_URL = process.env.NEWS_API;
 
 export async function GET() {
   try {
+    if (!FEED_URL) {
+      return Response.json(
+        { success: false, error: "News API URL is not configured" },
+        { status: 500 }
+      );
+    }
+
     const parser = new Parser();
 
     const feed = await parser.parseURL(FEED_URL);
