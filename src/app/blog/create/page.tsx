@@ -116,7 +116,7 @@ export default function BlogCreatePage() {
   }
 
   return (
-    <main className="min-h-screen bg-background dark:bg-black relative">
+    <main className="min-h-screen bg-background dark:bg-black relative mt-12">
       {/* Static Grid Background */}
       <div 
         className="absolute inset-0 opacity-[0.03] dark:opacity-10"
