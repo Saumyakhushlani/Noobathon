@@ -1,3 +1,5 @@
+import { ReactNode } from "react";
+
 export const metadata = {
   title: "Latest Cybersecurity News | Security Updates & Threats",
   description: "Stay updated with the latest cybersecurity news, security breaches, threat intelligence, and information security updates. Get real-time cybersecurity news and analysis.",
@@ -19,6 +21,6 @@ export const metadata = {
   },
 };
 
-export default function NewsLayout({ children }) {
+export default function NewsLayout({ children }: { children: ReactNode }) {
   return children;
 }

@@ -1,3 +1,5 @@
+import { ReactNode } from "react";
+
 export const metadata = {
   title: "Cybersecurity Roadmap | Learn Path & Skills",
   description: "Explore a comprehensive cybersecurity learning roadmap. Master information security skills, understand career paths, and track your progress in cybersecurity education.",
@@ -19,6 +21,6 @@ export const metadata = {
   },
 };
 
-export default function RoadmapLayout({ children }) {
+export default function RoadmapLayout({ children }: { children: ReactNode }) {
   return children;
 }

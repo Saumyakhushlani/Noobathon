@@ -1,3 +1,5 @@
+import { ReactNode } from "react";
+
 export const metadata = {
   title: "Cyber Awareness | Protect Yourself from Online Scams",
   description: "Learn simple habits that protect you from common online scams. Understand red flags, phishing attacks, OTP scams, and how to stay safe online.",
@@ -19,6 +21,6 @@ export const metadata = {
   },
 };
 
-export default function AwarenessLayout({ children }) {
+export default function AwarenessLayout({ children }: { children: ReactNode }) {
   return children;
 }
