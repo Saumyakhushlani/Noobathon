@@ -2,11 +2,30 @@
 
 import * as React from "react";
 import { Shield, Network, Lock, Eye, Code, Globe, AlertTriangle } from "lucide-react";
-import { useThemeStore } from "@/store/theme";
+import { useThemeStore, initThemeFromStorage } from "@/store/theme";
 
 export default function RoadmapIntro() {
+  const [mounted, setMounted] = React.useState(false);
   const theme = useThemeStore((s) => s.theme);
-  const isDark = theme === "dark";
+  
+  React.useEffect(() => {
+    initThemeFromStorage();
+    setMounted(true);
+  }, []);
+  
+  // Determine theme: use document class on initial render to avoid hydration mismatch,
+  // then use store value after mount for reactivity
+  const isDark = React.useMemo(() => {
+    if (!mounted) {
+      // Before mount, check document class (set by script in layout.tsx)
+      if (typeof document !== "undefined") {
+        return document.documentElement.classList.contains("dark");
+      }
+      return true; // SSR default
+    }
+    // After mount, use store value
+    return theme === "dark";
+  }, [theme, mounted]);
 
   const topics = [
     {
@@ -62,7 +81,9 @@ export default function RoadmapIntro() {
 
   return (
     <section
-      className="w-full py-12 mt-8 md:py-16 lg:py-20 bg-[#171717] dark:bg-[#171717]"
+      className={`w-full py-12 mt-8 md:py-16 lg:py-20 ${
+        isDark ? "bg-[#171717]" : "bg-white"
+      }`}
     >
       <div className="mx-auto w-full max-w-7xl px-4 md:px-8 lg:px-10">
         <div className="text-center mb-12">
