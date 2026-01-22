@@ -127,7 +127,7 @@ export default async function Page({ params }) {
           }}
         />
         <div className="relative z-10 mx-auto w-full max-w-6xl px-4 md:px-8 lg:px-16 py-12">
-          <div className="rounded-2xl border border-gray-200 dark:border-white/10 bg-white/80 dark:bg-black/50 backdrop-blur-sm p-6 md:p-8">
+          <div className="rounded-2xl border border-gray-200 dark:border-white/10 bg-white/80 dark:bg-gray-900/80 backdrop-blur-sm p-6 md:p-8">
             <h1 className="text-2xl font-extrabold tracking-tight text-gray-900 dark:text-white">
               Sign in required
             </h1>
@@ -180,7 +180,7 @@ export default async function Page({ params }) {
             <div className="mt-4">
               <Link
                 href="/blog"
-                className="text-sm font-semibold text-[var(--brand-purple)] hover:underline underline-offset-4"
+                className="text-sm font-semibold text-white hover:underline underline-offset-4"
               >
                 Back to blog
               </Link>
@@ -255,13 +255,13 @@ export default async function Page({ params }) {
             <div className="mb-6">
               <Link
                 href="/blog"
-                className="inline-flex items-center gap-2 text-sm font-semibold text-[var(--brand-purple)] hover:underline underline-offset-4 dark:text-purple-400"
+                className="inline-flex items-center gap-2 text-sm font-semibold text-white hover:underline underline-offset-4"
               >
                 ← Back to blog
               </Link>
             </div>
 
-            <article className="rounded-2xl border border-gray-200 dark:border-white/10 bg-white/80 dark:bg-black/50 backdrop-blur-sm p-6 md:p-8 lg:p-12">
+            <article className="rounded-2xl border border-gray-200 dark:border-white/10 bg-white/80 dark:bg-black/80 backdrop-blur-sm p-6 md:p-8 lg:p-12">
               <div className="border-b border-gray-200 dark:border-white/10 pb-6">
                 <div className="text-sm font-semibold text-gray-600 dark:text-gray-400">
                   In Blog • {post.authorName}
@@ -273,12 +273,12 @@ export default async function Page({ params }) {
               </div>
 
               {post.imageUrl ? (
-                <div className="mt-8 w-full overflow-hidden rounded-xl bg-gray-100 dark:bg-gray-800/50">
-                  <div className="flex items-center justify-center">
+                <div className="mt-8 w-full overflow-hidden rounded-xl bg-gray-100 dark:bg-gray-900/50">
+                  <div className="flex items-center justify-center aspect-[16/9] max-w-3xl mx-auto">
                     <img
                       src={post.imageUrl}
                       alt={post.title}
-                      className="h-auto w-full max-h-[400px] object-cover"
+                      className="h-full w-full object-cover rounded-xl"
                     />
                   </div>
                 </div>
@@ -295,7 +295,7 @@ export default async function Page({ params }) {
                   prose-pre:bg-gray-100 dark:prose-pre:bg-gray-900/50
                   prose-blockquote:border-l-purple-500 dark:prose-blockquote:border-l-purple-400
                   prose-blockquote:text-gray-700 dark:prose-blockquote:text-gray-300
-                  prose-a:text-[var(--brand-purple)] dark:prose-a:text-purple-400
+                  prose-a:text-white dark:prose-a:text-white
                   prose-a:underline prose-a:underline-offset-4
                   prose-ul:text-gray-700 dark:prose-ul:text-gray-300
                   prose-ol:text-gray-700 dark:prose-ol:text-gray-300
@@ -309,7 +309,7 @@ export default async function Page({ params }) {
           </div>
 
           <aside className="hidden lg:block space-y-6">
-            <div className="rounded-2xl border border-gray-200 dark:border-white/10 bg-white/80 dark:bg-black/50 backdrop-blur-sm p-6">
+            <div className="rounded-2xl border border-gray-200 dark:border-white/10 bg-white/80 dark:bg-gray-900/80 backdrop-blur-sm p-6">
               <h3 className="text-sm font-extrabold text-gray-900 dark:text-white mb-4">Article Info</h3>
               <div className="space-y-3 text-sm">
                 <div>
@@ -323,17 +323,17 @@ export default async function Page({ params }) {
               </div>
             </div>
             
-            <div className="rounded-2xl border border-gray-200 dark:border-white/10 bg-white/80 dark:bg-black/50 backdrop-blur-sm p-6">
+            <div className="rounded-2xl border border-gray-200 dark:border-white/10 bg-white/80 dark:bg-gray-900/80 backdrop-blur-sm p-6">
               <h3 className="text-sm font-extrabold text-gray-900 dark:text-white mb-4">Quick Links</h3>
               <Link
                 href="/blog"
-                className="block text-sm text-[var(--brand-purple)] dark:text-purple-400 hover:underline underline-offset-4 mb-2"
+                className="block text-sm text-white hover:underline underline-offset-4 mb-2"
               >
                 ← All Posts
               </Link>
               <Link
                 href="/blog/create"
-                className="block text-sm text-[var(--brand-purple)] dark:text-purple-400 hover:underline underline-offset-4"
+                className="block text-sm text-white hover:underline underline-offset-4"
               >
                 Write New Post
               </Link>

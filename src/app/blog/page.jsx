@@ -228,19 +228,18 @@ export default async function Page() {
                     href={`/blog/${p.id}`}
                     className="group block hover:opacity-90 transition-all duration-300"
                   >
-                    <div className="h-full rounded-xl border border-gray-300/20 dark:border-white/10 bg-white/80 dark:bg-gray-900/80 backdrop-blur-sm overflow-hidden shadow-[0_2px_8px_rgb(0,0,0,0.08)] dark:shadow-[0_2px_8px_rgb(0,0,0,0.3)] hover:shadow-[0_4px_12px_rgb(0,0,0,0.12)] dark:hover:shadow-[0_4px_12px_rgb(0,0,0,0.5)] transition-all flex flex-col">
-                      <div className="w-full aspect-[4/3] bg-gray-100 dark:bg-gray-800/50 overflow-hidden">
+                    <div className="h-full rounded-xl border border-gray-300/20 dark:border-white/10 bg-white/80 dark:bg-black/80 backdrop-blur-sm overflow-hidden shadow-[0_2px_8px_rgb(0,0,0,0.08)] dark:shadow-[0_2px_8px_rgb(0,0,0,0.3)] hover:shadow-[0_4px_12px_rgb(0,0,0,0.12)] dark:hover:shadow-[0_4px_12px_rgb(0,0,0,0.5)] transition-all flex flex-col">
+                      <div className="w-full aspect-[16/9] bg-gray-100 dark:bg-gray-900 overflow-hidden px-4 pt-4">
                         {p.imageUrl ? (
                           <img
                             src={p.imageUrl}
                             alt={p.title}
-                            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                            className="w-full h-full object-cover rounded-lg group-hover:scale-105 transition-transform duration-300"
                           />
                         ) : (
-                          <div className="w-full h-full flex items-center justify-center">
+                          <div className="w-full h-full flex items-center justify-center rounded-lg">
                             <div
-                              className="w-full h-full rounded-t-xl"
-                              style={{ backgroundColor: "var(--brand-purple)" }}
+                              className="w-full h-full rounded-lg bg-gray-800 dark:bg-gray-800"
                             />
                           </div>
                         )}
