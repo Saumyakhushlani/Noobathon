@@ -49,21 +49,25 @@ export async function generateMetadata({ params }) {
     }
 
     const description = stripMarkdown(post.content).slice(0, 160);
-    const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://yourdomain.com";
+    const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://cybersecurityhub.com";
     const postUrl = `${siteUrl}/blog/${id}`;
 
     return {
-      title: `${post.title} | Cybersecurity Blog`,
-      description: description || `Read ${post.title} by ${post.authorName} on our cybersecurity blog.`,
-      keywords: ["cybersecurity", "information security", "cyber awareness", post.title],
+      title: `${post.title} | Cyber Security Hub`,
+      description: description || `Read ${post.title} by ${post.authorName} on our cybersecurity blog. Learn about information security, cyber awareness, and expert insights.`,
+      keywords: ["cybersecurity", "information security", "cyber awareness", "security tips", post.title, post.authorName],
       authors: [{ name: post.authorName }],
+      creator: post.authorName,
+      publisher: "Cyber Security Hub",
       openGraph: {
         title: post.title,
-        description: description || `Read ${post.title} by ${post.authorName}`,
+        description: description || `Read ${post.title} by ${post.authorName} on our cybersecurity blog.`,
         type: "article",
         publishedTime: post.createdAt.toISOString(),
+        modifiedTime: post.createdAt.toISOString(),
         authors: [post.authorName],
         url: postUrl,
+        siteName: "Cyber Security Hub",
         ...(post.imageUrl && {
           images: [
             {
@@ -79,9 +83,13 @@ export async function generateMetadata({ params }) {
         card: "summary_large_image",
         title: post.title,
         description: description || `Read ${post.title} by ${post.authorName}`,
+        creator: "@cybersecurityhub",
         ...(post.imageUrl && {
           images: [post.imageUrl],
         }),
+      },
+      alternates: {
+        canonical: postUrl,
       },
     };
   } catch (e) {

@@ -8,8 +8,24 @@ import InteractiveGridBackground from "@/components/InteractiveGridBackground";
 export const dynamic = "force-dynamic";
 
 export const metadata = {
-  title: "My Posts | Cybersecurity Blog",
-  description: "View and manage your blog posts.",
+  title: "My Posts | Cyber Security Hub",
+  description: "View and manage all your published blog posts. Create, edit, and track your cybersecurity articles and insights.",
+  keywords: ["my posts", "blog management", "cybersecurity blog", "user posts"],
+  robots: {
+    index: false,
+    follow: false,
+  },
+  openGraph: {
+    title: "My Posts | Cyber Security Hub",
+    description: "View and manage all your published blog posts.",
+    type: "website",
+    url: "/blog/my",
+  },
+  twitter: {
+    card: "summary",
+    title: "My Posts | Cyber Security Hub",
+    description: "View and manage all your published blog posts.",
+  },
 };
 
 function formatDate(d) {

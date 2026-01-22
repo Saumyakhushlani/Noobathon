@@ -9,16 +9,31 @@ export const dynamic = "force-dynamic";
 export const metadata = {
   title: "Blog | Cybersecurity Insights & Expert Learnings",
   description: "Explore our collection of cybersecurity insights, security tips, threat analysis, and expert learnings. Stay informed with the latest in information security and cyber awareness.",
-  keywords: ["cybersecurity", "information security", "cyber awareness", "security tips", "threat analysis", "cybersecurity blog", "security insights"],
+  keywords: ["cybersecurity", "information security", "cyber awareness", "security tips", "threat analysis", "cybersecurity blog", "security insights", "cyber security articles"],
+  authors: [{ name: "Cyber Security Hub" }],
   openGraph: {
     title: "Blog | Cybersecurity Insights & Expert Learnings",
-    description: "Explore our collection of cybersecurity insights, security tips, threat analysis, and expert learnings.",
+    description: "Explore our collection of cybersecurity insights, security tips, threat analysis, and expert learnings. Stay informed with the latest in information security and cyber awareness.",
     type: "website",
+    url: "/blog",
+    siteName: "Cyber Security Hub",
+    images: [
+      {
+        url: "/og-blog.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Cybersecurity Blog",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Blog | Cybersecurity Insights & Expert Learnings",
     description: "Explore our collection of cybersecurity insights, security tips, threat analysis, and expert learnings.",
+    site: "@cybersecurityhub",
+  },
+  alternates: {
+    canonical: "/blog",
   },
 };
 
